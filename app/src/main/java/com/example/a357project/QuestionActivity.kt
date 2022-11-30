@@ -20,14 +20,28 @@ class QuestionActivity : AppCompatActivity() {
         var answerCButton = findViewById<Button>(R.id.answerC)
         var answerDButton = findViewById<Button>(R.id.answerD)
         var currentQuestion = Random().nextInt(1998) + 10000
-        var currentQuestionString = "Question_" + currentQuestion
+        var currentQuestionString: String = "Question_" + currentQuestion
+        var currentA: String = "A_"+currentQuestion
+        var currentB: String = "B_"+currentQuestion
+        var currentC: String = "C_"+currentQuestion
+        var currentD: String = "D_"+currentQuestion
+        var currQ: String = getString(applicationContext.resources.getIdentifier(
+            currentQuestionString, "string", packageName))
+        var currA : String = getString(applicationContext.resources.getIdentifier(
+            currentA, "string", packageName))
+        var currB : String = getString(applicationContext.resources.getIdentifier(
+            currentB, "string", packageName))
+        var currC : String = getString(applicationContext.resources.getIdentifier(
+            currentC, "string", packageName))
+        var currD : String = getString(applicationContext.resources.getIdentifier(
+            currentD, "string", packageName))
         //We cant access by hard coding @String/currentQuestionString
         //Or by doing R.string.currentQuestionString
-        questionLabel.text = getString(R.string.Question_10111)
-        answerAButton.text = getString(R.string.A_10111)
-        answerBButton.text = getString(R.string.B_10111)
-        answerCButton.text = getString(R.string.C_10111)
-        answerDButton.text = getString(R.string.D_10111)
+        questionLabel.text = currQ
+        answerAButton.text = currA
+        answerBButton.text = currB
+        answerCButton.text = currC
+        answerDButton.text = currD
 
         answerAButton.setOnClickListener{
             val i = Intent(this, QuestionActivity::class.java)
