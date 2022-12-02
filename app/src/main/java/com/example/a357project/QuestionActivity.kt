@@ -62,34 +62,57 @@ class QuestionActivity : AppCompatActivity() {
         answerCButton.text = currC
         answerDButton.text = currD
 
+        var correctAnswerString: String = "Answer_$currentQuestion"
+        var correctAnswer: String = getString(applicationContext.resources.getIdentifier(
+            correctAnswerString, "string", packageName))
 
         answerAButton.setOnClickListener{
             finish()
-            val i = Intent(this, CorrectAnswerActivity::class.java)
-            //Logic to see if this button has correct value and go to either screen
-            startActivity(i)
+            if(correctAnswer == "A" ){
+                val i = Intent(this, CorrectAnswerActivity::class.java)
+                startActivity(i)
+            }
+            else {
+                val i = Intent(this, WrongAnswerActivity::class.java)
+                startActivity(i)
+            }
         }
 
         answerBButton.setOnClickListener{
             finish()
-            val i = Intent(this, CorrectAnswerActivity::class.java)
-            //Logic to see if this button has correct value and go to either screen
-            startActivity(i)
+            if(correctAnswer == "B" ){
+                val i = Intent(this, CorrectAnswerActivity::class.java)
+                startActivity(i)
+            }
+            else {
+                val i = Intent(this, WrongAnswerActivity::class.java)
+                startActivity(i)
+            }
 
         }
 
         answerCButton.setOnClickListener{
             finish()
-            val i = Intent(this, CorrectAnswerActivity::class.java)
-            //Logic to see if this button has correct value and go to either screen
-            startActivity(i)
+            if(correctAnswer == "C" ){
+                val i = Intent(this, CorrectAnswerActivity::class.java)
+                startActivity(i)
+            }
+            else {
+                val i = Intent(this, WrongAnswerActivity::class.java)
+                startActivity(i)
+            }
         }
 
         answerDButton.setOnClickListener{
             finish()
-            val i = Intent(this, CorrectAnswerActivity::class.java)
-            //Logic to see if this button has correct value and go to either screen
-            startActivity(i)
+            if(correctAnswer == "D" ){
+                val i = Intent(this, CorrectAnswerActivity::class.java)
+                startActivity(i)
+            }
+            else {
+                val i = Intent(this, WrongAnswerActivity::class.java)
+                startActivity(i)
+            }
 
         }
 

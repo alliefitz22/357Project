@@ -13,6 +13,7 @@ class StatsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_stats)
 
         val statHomeButton = findViewById<Button>(R.id.stats2home)
+
         statHomeButton.setOnClickListener{
             finish()
             val i = Intent(this, MainActivity::class.java)
