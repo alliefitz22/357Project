@@ -1,5 +1,6 @@
 package com.example.a357project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,16 +16,16 @@ class WrongAnswerActivity : AppCompatActivity() {
         val longestStreak = findViewById<TextView>(R.id.wLongestStreak)
 
         tryAgainButton.setOnClickListener {
-            //This is where we need to go back to the question screen
-            //val i = Intent(this, QuestionActivity::class.java)
-            //startActivity(i)
+            finish()
+            val i = Intent(this, QuestionActivity::class.java)
+            startActivity(i)
             //Also add code to reset streak
         }
         stopButton.setOnClickListener {
+            finish()
             //Add code to reset streak
-            //this is where we need to go back to the main screen
-            // val i = Intent(this, MainActivity::class.java )
-            // startActivity(i)
+            val i = Intent(this, MainActivity::class.java )
+            startActivity(i)
 
         }
     }

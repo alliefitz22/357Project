@@ -16,14 +16,15 @@ class CorrectAnswerActivity : AppCompatActivity() {
         val longestStreak = findViewById<TextView>(R.id.cLongestStreak)
 
         continueButton.setOnClickListener {
-            //This is where we need to go back to the question screen
-            //val i = Intent(this, QuestionActivity::class.java)
-            //startActivity(i)
+            finish()
+            val i = Intent(this, QuestionActivity::class.java )
+            startActivity(i)
         }
         stopButton.setOnClickListener {
+            finish()
             //this is where we need to go back to the main screen
-           // val i = Intent(this, MainActivity::class.java )
-           // startActivity(i)
+           val i = Intent(this, MainActivity::class.java )
+           startActivity(i)
         }
 
     }
