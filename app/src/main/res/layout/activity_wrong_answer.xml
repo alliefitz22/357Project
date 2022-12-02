@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3A3939"
     tools:context=".WrongAnswerActivity">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="178dp"
         android:text="Incorrect"
+        android:textColor="#EF0202"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -24,8 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="15dp"
         android:text="Try Again"
+        android:textColor="#FD0404"
+        app:iconTint="#F30606"
         app:layout_constraintBottom_toTopOf="@+id/wHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -34,10 +38,12 @@
         android:id="@+id/wHome"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="118dp"
-        android:layout_marginEnd="118dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="122dp"
         android:layout_marginBottom="232dp"
         android:text="I'm done for now"
+        android:textColor="#FF0000"
+        app:iconTint="#E40D0D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,10 +65,11 @@
         android:id="@+id/wcurrentStreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="253dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="10dp"
         android:text="Current Streak:"
+        android:textColor="#E40707"
         app:layout_constraintBottom_toTopOf="@+id/wLongestStreak"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,11 +78,13 @@
         android:id="@+id/wLongestStreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="249dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="140dp"
         android:text="Longest Streak:"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
