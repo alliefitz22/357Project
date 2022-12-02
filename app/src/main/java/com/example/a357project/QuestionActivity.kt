@@ -9,18 +9,14 @@ import android.widget.Button
 import android.widget.TextView
 import java.util.*
 
-import kotlin.random.Random.Default.nextInt
-
 class QuestionActivity : AppCompatActivity() {
-
-    lateinit var used: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
 
-        /* Initializes used questions list if uncreated,
-           if created loads it into array. */
+        // Initializes used questions list if uncreated, if created loads it into array.
+        var used: Array<String> = emptyArray()
         val files: Array<String> = applicationContext.fileList()
         if (!files.contains("used")) {
             applicationContext.openFileOutput("used", Context.MODE_PRIVATE).use {
@@ -31,29 +27,68 @@ class QuestionActivity : AppCompatActivity() {
             used = reader.readLines().toTypedArray()
         }
 
-        var questionLabel = findViewById<TextView>(R.id.question)
-        var answerAButton = findViewById<Button>(R.id.answerA)
-        var answerBButton = findViewById<Button>(R.id.answerB)
-        var answerCButton = findViewById<Button>(R.id.answerC)
-        var answerDButton = findViewById<Button>(R.id.answerD)
+        val questionLabel = findViewById<TextView>(R.id.question)
+        val answerAButton = findViewById<Button>(R.id.answerA)
+        val answerBButton = findViewById<Button>(R.id.answerB)
+        val answerCButton = findViewById<Button>(R.id.answerC)
+        val answerDButton = findViewById<Button>(R.id.answerD)
 
         var currentQuestion = Random().nextInt(1998) + 10000
 
-        var currentQuestionString: String = "Question_" + currentQuestion
-        var currentA: String = "A_"+currentQuestion
-        var currentB: String = "B_"+currentQuestion
-        var currentC: String = "C_"+currentQuestion
-        var currentD: String = "D_"+currentQuestion
+        var unusedQuestion = false
 
-        var currQ: String = getString(applicationContext.resources.getIdentifier(
+        while (!unusedQuestion) {
+            /* If used list is empty, write question to used list. This is a separate
+               condition so that the first line is not a newline character, which can
+               mess with the count. Probably a better way of doing this but who really
+               cares if it works, eh? */
+            if (used.isEmpty()) {
+                applicationContext.openFileOutput("used", Context.MODE_APPEND).use {
+                    it.write(currentQuestion.toString().toByteArray())
+                }
+                unusedQuestion = true
+            /* If question is not in used list, question is unused. Write question
+               to used list, then flag the question as unused to exit the loop. */
+            } else if (!used.contains(currentQuestion.toString())) {
+                applicationContext.openFileOutput("used", Context.MODE_APPEND).use {
+                    it.write(("\n"+(currentQuestion.toString())).toByteArray())
+                }
+                unusedQuestion = true
+
+            /* If the question has been used and there are still unused questions
+               remaining, add one to the current value, then loop again. Modular
+               division to ensure that we loop from 11998 back to 10000. Find a
+               more efficient way to do this. Hashing algorithms from 263 maybe
+               helpful? */
+            } else if (used.size < 1999) {
+                currentQuestion = (((currentQuestion-10000)+1)%1999)+10000
+
+            /* If we've already used the question but we have no more unused questions,
+               blank the used questions file, blank the array, then loop again to write
+               as used. */
+            } else {
+                applicationContext.openFileOutput("used", Context.MODE_PRIVATE).use {
+                    it.write("".toByteArray())
+                }
+                used = emptyArray()
+            }
+        }
+
+        val currentQuestionString: String = "Question_" + currentQuestion
+        val currentA: String = "A_"+currentQuestion
+        val currentB: String = "B_"+currentQuestion
+        val currentC: String = "C_"+currentQuestion
+        val currentD: String = "D_"+currentQuestion
+
+        val currQ: String = getString(applicationContext.resources.getIdentifier(
             currentQuestionString, "string", packageName))
-        var currA : String = getString(applicationContext.resources.getIdentifier(
+        val currA : String = getString(applicationContext.resources.getIdentifier(
             currentA, "string", packageName))
-        var currB : String = getString(applicationContext.resources.getIdentifier(
+        val currB : String = getString(applicationContext.resources.getIdentifier(
             currentB, "string", packageName))
-        var currC : String = getString(applicationContext.resources.getIdentifier(
+        val currC : String = getString(applicationContext.resources.getIdentifier(
             currentC, "string", packageName))
-        var currD : String = getString(applicationContext.resources.getIdentifier(
+        val currD : String = getString(applicationContext.resources.getIdentifier(
             currentD, "string", packageName))
 
         questionLabel.text = currQ
@@ -62,8 +97,8 @@ class QuestionActivity : AppCompatActivity() {
         answerCButton.text = currC
         answerDButton.text = currD
 
-        var correctAnswerString: String = "Answer_$currentQuestion"
-        var correctAnswer: String = getString(applicationContext.resources.getIdentifier(
+        val correctAnswerString = "Answer_$currentQuestion"
+        val correctAnswer: String = getString(applicationContext.resources.getIdentifier(
             correctAnswerString, "string", packageName))
 
         answerAButton.setOnClickListener{
