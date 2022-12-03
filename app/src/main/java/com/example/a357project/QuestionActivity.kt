@@ -2,6 +2,7 @@ package com.example.a357project
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import java.io.BufferedReader
@@ -11,9 +12,15 @@ import java.util.*
 
 class QuestionActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
+        //shared preferences initialization
+        val sPref: SharedPreferences = applicationContext.getSharedPreferences("MyPref", 0)
+        val editor: SharedPreferences.Editor = sPref.edit()
+
+
 
         // Initializes used questions list if uncreated, if created loads it into array.
         var used: Array<String> = emptyArray()
@@ -100,10 +107,15 @@ class QuestionActivity : AppCompatActivity() {
         val correctAnswerString = "Answer_$currentQuestion"
         val correctAnswer: String = getString(applicationContext.resources.getIdentifier(
             correctAnswerString, "string", packageName))
+        var currentStreak = sPref.getInt("currentStreak", 0)
 
         answerAButton.setOnClickListener{
             finish()
             if(correctAnswer == "A" ){
+                //updating the current streak
+                currentStreak += 1
+                editor.putInt("currentStreak", currentStreak)
+                editor.apply()
                 val i = Intent(this, CorrectAnswerActivity::class.java)
                 startActivity(i)
             }
@@ -116,6 +128,9 @@ class QuestionActivity : AppCompatActivity() {
         answerBButton.setOnClickListener{
             finish()
             if(correctAnswer == "B" ){
+                currentStreak += 1
+                editor.putInt("currentStreak", currentStreak)
+                editor.apply()
                 val i = Intent(this, CorrectAnswerActivity::class.java)
                 startActivity(i)
             }
@@ -129,6 +144,9 @@ class QuestionActivity : AppCompatActivity() {
         answerCButton.setOnClickListener{
             finish()
             if(correctAnswer == "C" ){
+                currentStreak += 1
+                editor.putInt("currentStreak", currentStreak)
+                editor.apply()
                 val i = Intent(this, CorrectAnswerActivity::class.java)
                 startActivity(i)
             }
@@ -141,6 +159,9 @@ class QuestionActivity : AppCompatActivity() {
         answerDButton.setOnClickListener{
             finish()
             if(correctAnswer == "D" ){
+                currentStreak += 1
+                editor.putInt("currentStreak", currentStreak)
+                editor.apply()
                 val i = Intent(this, CorrectAnswerActivity::class.java)
                 startActivity(i)
             }
@@ -152,4 +173,5 @@ class QuestionActivity : AppCompatActivity() {
         }
 
     }
+
 }

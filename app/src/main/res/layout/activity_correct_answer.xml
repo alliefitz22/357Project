@@ -63,25 +63,21 @@
         android:id="@+id/cCurrentStreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="283dp"
+        android:layout_marginStart="56dp"
         android:layout_marginBottom="10dp"
         android:text="Current Streak:"
         android:textColor="#4CBB17"
         app:layout_constraintBottom_toTopOf="@+id/cLongestStreak"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/cLongestStreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="279dp"
+        android:layout_marginStart="56dp"
         android:layout_marginBottom="168dp"
         android:text="Longest Streak:"
         android:textColor="#4CBB17"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
