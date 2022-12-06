@@ -123,7 +123,7 @@
     <string name="Answer_10014">B</string>
 
     <string name="Category_10015">Sports_Hobbies</string>
-    <string name="Question_10015">A renowned New York sports arena and exhibition center is called Madison�what?</string>
+    <string name="Question_10015">A renowned New York sports arena and exhibition center is called Madison… what?</string>
     <string name="A_10015">Round Garden</string>
     <string name="B_10015">Square Garden</string>
     <string name="C_10015">Oval Garden</string>
@@ -299,7 +299,7 @@
     <string name="Answer_10036">A</string>
 
     <string name="Category_10037">Language</string>
-    <string name="Question_10037">Complete the phrase, \'as cool as a�\'?</string>
+    <string name="Question_10037">Complete the phrase, \'as cool as a…\'?</string>
     <string name="A_10037">Courgette</string>
     <string name="B_10037">Cauliflower</string>
     <string name="C_10037">Cucumber</string>
@@ -331,7 +331,7 @@
     <string name="Answer_10040">C</string>
 
     <string name="Category_10041">Language</string>
-    <string name="Question_10041">A very eccentric person is often described as being \'nutty as a �\' what?</string>
+    <string name="Question_10041">A very eccentric person is often described as being \'nutty as a …\' what?</string>
     <string name="A_10041">Flapjack</string>
     <string name="B_10041">Fig roll</string>
     <string name="C_10041">Fruitcake</string>
@@ -347,7 +347,7 @@
     <string name="Answer_10042">C</string>
 
     <string name="Category_10043">Language</string>
-    <string name="Question_10043">According to the saying, you should \'look before you�\' what?</string>
+    <string name="Question_10043">According to the saying, you should \'look before you…\' what?</string>
     <string name="A_10043">Lurk</string>
     <string name="B_10043">Leap</string>
     <string name="C_10043">Lounge</string>
@@ -363,7 +363,7 @@
     <string name="Answer_10044">A</string>
 
     <string name="Category_10045">Language</string>
-    <string name="Question_10045">If someone you have just been talking about suddenly appears, you might say, \'Talk of the�\' what?</string>
+    <string name="Question_10045">If someone you have just been talking about suddenly appears, you might say, \'Talk of the…\' what?</string>
     <string name="A_10045">Doctor</string>
     <string name="B_10045">Devil</string>
     <string name="C_10045">Dentist</string>
@@ -371,7 +371,7 @@
     <string name="Answer_10045">B</string>
 
     <string name="Category_10046">Language</string>
-    <string name="Question_10046">Someone who is old-fashioned is said to be \'behind the�\' what?</string>
+    <string name="Question_10046">Someone who is old-fashioned is said to be \'behind the…\' what?</string>
     <string name="A_10046">Guardian</string>
     <string name="B_10046">Times</string>
     <string name="C_10046">Independent</string>
@@ -387,7 +387,7 @@
     <string name="Answer_10047">A</string>
 
     <string name="Category_10048">Language</string>
-    <string name="Question_10048">Something everyday and ordinary is often described as \'common or�\' what?</string>
+    <string name="Question_10048">Something everyday and ordinary is often described as \'common or…\' what?</string>
     <string name="A_10048">Greenhouse</string>
     <string name="B_10048">Garden</string>
     <string name="C_10048">Glasshouse</string>
@@ -571,7 +571,7 @@
     <string name="Answer_10070">A</string>
 
     <string name="Category_10071">Entertainment</string>
-    <string name="Question_10071">Which Puerto Rican singer sings �Despacito�?</string>
+    <string name="Question_10071">Which Puerto Rican singer sings \'Despacito\'?</string>
     <string name="A_10071">Ricky Martin</string>
     <string name="B_10071">Luis Fonsi</string>
     <string name="C_10071">Chayanne</string>
@@ -589,7 +589,7 @@
     <string name="Category_10073">Entertainment</string>
     <string name="Question_10073">Who directed the movie \'Psycho\' (1960)?</string>
     <string name="A_10073">Hitchcock</string>
-    <string name="B_10073">Almod�var</string>
+    <string name="B_10073">Almodovar</string>
     <string name="C_10073">Lucas</string>
     <string name="D_10073">Spielberg</string>
     <string name="Answer_10073">A</string>
@@ -643,7 +643,7 @@
     <string name="Answer_10079">B</string>
 
     <string name="Category_10080">History</string>
-    <string name="Question_10080">Patrick Henry famously said, \'Give me liberty, or give me�\' what?</string>
+    <string name="Question_10080">Patrick Henry famously said, \'Give me liberty, or give me…\' what?</string>
     <string name="A_10080">Strength</string>
     <string name="B_10080">Life</string>
     <string name="C_10080">Death</string>
@@ -1035,7 +1035,7 @@
     <string name="Answer_10128">C</string>
 
     <string name="Category_10129">Entertainment</string>
-    <string name="Question_10129">Complete the title of the Australian soap, \'Home and �\'?</string>
+    <string name="Question_10129">Complete the title of the Australian soap, \'Home and …\'?</string>
     <string name="A_10129">Away</string>
     <string name="B_10129">Hurray</string>
     <string name="C_10129">Delay</string>
@@ -1043,7 +1043,7 @@
     <string name="Answer_10129">A</string>
 
     <string name="Category_10130">Entertainment</string>
-    <string name="Question_10130">Complete the title of the popular song: \'Tulips From�\'?</string>
+    <string name="Question_10130">Complete the title of the popular song: \'Tulips From…\'?</string>
     <string name="A_10130">Rotterdam</string>
     <string name="B_10130">Amsterdam</string>
     <string name="C_10130">Aswan Dam</string>
@@ -1051,7 +1051,7 @@
     <string name="Answer_10130">B</string>
 
     <string name="Category_10131">Entertainment</string>
-    <string name="Question_10131">Finish the title of this carol: \'God Rest Ye�\' who?</string>
+    <string name="Question_10131">Finish the title of this carol: \'God Rest Ye…\' who?</string>
     <string name="A_10131">Happy Gentlemen</string>
     <string name="B_10131">Merry Gentlemen</string>
     <string name="C_10131">Kind Gentlemen</string>
@@ -1163,7 +1163,7 @@
     <string name="Answer_10144">A</string>
 
     <string name="Category_10145">Entertainment</string>
-    <string name="Question_10145">The famous American singer is Whitney�?</string>
+    <string name="Question_10145">The famous American singer is Whitney…?</string>
     <string name="A_10145">Lincoln</string>
     <string name="B_10145">Jackson</string>
     <string name="C_10145">Dallas</string>
@@ -1443,7 +1443,7 @@
     <string name="Answer_10179">C</string>
 
     <string name="Category_10180">Language</string>
-    <string name="Question_10180">According to the proverb, it\'s impossible to make what \'�out of a sow\'s ear\'?</string>
+    <string name="Question_10180">According to the proverb, it\'s impossible to make what \'out of a sow\'s ear\'?</string>
     <string name="A_10180">Leather wallet</string>
     <string name="B_10180">Silk purse</string>
     <string name="C_10180">Linen sack</string>
@@ -1491,7 +1491,7 @@
     <string name="Answer_10185">B</string>
 
     <string name="Category_10186">Language</string>
-    <string name="Question_10186">A person who acts in a reckless manner is said to \'throw caution to the�\' what?</string>
+    <string name="Question_10186">A person who acts in a reckless manner is said to \'throw caution to the…\' what?</string>
     <string name="A_10186">Sun</string>
     <string name="B_10186">Wind</string>
     <string name="C_10186">Snow</string>
@@ -1507,7 +1507,7 @@
     <string name="Answer_10187">B</string>
 
     <string name="Category_10188">Language</string>
-    <string name="Question_10188">Complete the proverb: \'Don\'t count your chickens before they are�\'? </string>
+    <string name="Question_10188">Complete the proverb: \'Don\'t count your chickens before they are…\'? </string>
     <string name="A_10188">Plucked</string>
     <string name="B_10188">Hatched</string>
     <string name="C_10188">Eaten</string>
@@ -1539,7 +1539,7 @@
     <string name="Answer_10191">B</string>
 
     <string name="Category_10192">Language</string>
-    <string name="Question_10192">Someone who drastically alters his opinion of something is said to have had a \'change of�\' what?</string>
+    <string name="Question_10192">Someone who drastically alters his opinion of something is said to have had a \'change of…\' what?</string>
     <string name="A_10192">Scene</string>
     <string name="B_10192">Heart</string>
     <string name="C_10192">Socks</string>
@@ -1547,7 +1547,7 @@
     <string name="Answer_10192">B</string>
 
     <string name="Category_10193">Language</string>
-    <string name="Question_10193">Something which uses the most up to date technology is often described as \'cutting�\' what?</string>
+    <string name="Question_10193">Something which uses the most up to date technology is often described as \'cutting…\' what?</string>
     <string name="A_10193">Edge</string>
     <string name="B_10193">Glass</string>
     <string name="C_10193">Teeth</string>
@@ -1579,7 +1579,7 @@
     <string name="Answer_10196">D</string>
 
     <string name="Category_10197">Language</string>
-    <string name="Question_10197">What is the present perfect tense\'s 3rd person singular of the verb �to eat�?</string>
+    <string name="Question_10197">What is the present perfect tense\'s 3rd person singular of the verb \'to eat\'?</string>
     <string name="A_10197">Ate</string>
     <string name="B_10197">Will eat</string>
     <string name="C_10197">Had eaten</string>
@@ -1707,7 +1707,7 @@
     <string name="Answer_10212">C</string>
 
     <string name="Category_10213">Arts_Literature</string>
-    <string name="Question_10213">Complete the name of the great Renaissance artist: Leonardo da�?</string>
+    <string name="Question_10213">Complete the name of the great Renaissance artist: Leonardo da…?</string>
     <string name="A_10213">Binci</string>
     <string name="B_10213">Pinci</string>
     <string name="C_10213">Vinci</string>
@@ -1715,7 +1715,7 @@
     <string name="Answer_10213">C</string>
 
     <string name="Category_10214">Arts_Literature</string>
-    <string name="Question_10214">Complete the title of Jonathan Swift\'s classic novel, \'Gulliver\'s�\' what?</string>
+    <string name="Question_10214">Complete the title of Jonathan Swift\'s classic novel, \'Gulliver\'s…\' what?</string>
     <string name="A_10214">Travels</string>
     <string name="B_10214">Vacation</string>
     <string name="C_10214">Lost Weekend</string>
@@ -2011,7 +2011,7 @@
     <string name="Answer_10250">C</string>
 
     <string name="Category_10251">Entertainment</string>
-    <string name="Question_10251">According to the seasonal song, \'I Saw Mommy Kissing�\' who?</string>
+    <string name="Question_10251">According to the seasonal song, \'I Saw Mommy Kissing…\' who?</string>
     <string name="A_10251">The postman</string>
     <string name="B_10251">Santa Claus</string>
     <string name="C_10251">The milkman</string>
@@ -2035,7 +2035,7 @@
     <string name="Answer_10253">B</string>
 
     <string name="Category_10254">Entertainment</string>
-    <string name="Question_10254">Complete the title of the TV show: \'Top of the�\'?</string>
+    <string name="Question_10254">Complete the title of the TV show: \'Top of the…\'?</string>
     <string name="A_10254">Pops</string>
     <string name="B_10254">Mops</string>
     <string name="C_10254">Sops</string>
@@ -2043,7 +2043,7 @@
     <string name="Answer_10254">A</string>
 
     <string name="Category_10255">Entertainment</string>
-    <string name="Question_10255">Complete the title of this Andrew Lloyd-Webber musical: \'Phantom of the �\'</string>
+    <string name="Question_10255">Complete the title of this Andrew Lloyd-Webber musical: \'Phantom of the …\'</string>
     <string name="A_10255">Ballet</string>
     <string name="B_10255">Cinema</string>
     <string name="C_10255">Opera</string>
@@ -2075,7 +2075,7 @@
     <string name="Answer_10258">D</string>
 
     <string name="Category_10259">Sports_Hobbies</string>
-    <string name="Question_10259">A tennis match is divided into�</string>
+    <string name="Question_10259">A tennis match is divided into…</string>
     <string name="A_10259">Bits</string>
     <string name="B_10259">Sets</string>
     <string name="C_10259">Parts</string>
@@ -2147,7 +2147,7 @@
     <string name="Answer_10267">A</string>
 
     <string name="Category_10268">Sports_Hobbies</string>
-    <string name="Question_10268">The 9-time Wimbledon Ladies\' Singles champion is Martina�who?</string>
+    <string name="Question_10268">The 9-time Wimbledon Ladies\' Singles champion is Martina… who?</string>
     <string name="A_10268">Evert</string>
     <string name="B_10268">Hingis</string>
     <string name="C_10268">Navratilova</string>
@@ -2331,7 +2331,7 @@
     <string name="Answer_10290">A</string>
 
     <string name="Category_10291">Entertainment</string>
-    <string name="Question_10291">Complete the title of the weekly variety show first aired in 1975, \'Saturday Night �\'?</string>
+    <string name="Question_10291">Complete the title of the weekly variety show first aired in 1975, \'Saturday Night …\'?</string>
     <string name="A_10291">In</string>
     <string name="B_10291">Out</string>
     <string name="C_10291">Recorded</string>
@@ -2363,7 +2363,7 @@
     <string name="Answer_10294">B</string>
 
     <string name="Category_10295">Arts_Literature</string>
-    <string name="Question_10295">The dance craze which became popular in the U.S. in the \'80s was�dancing?</string>
+    <string name="Question_10295">The dance craze which became popular in the U.S. in the \'80s was […] dancing?</string>
     <string name="A_10295">Smash</string>
     <string name="B_10295">Split</string>
     <string name="C_10295">Burst</string>
@@ -2399,7 +2399,7 @@
     <string name="A_10299">Appliance</string>
     <string name="B_10299">Apprentice</string>
     <string name="C_10299">Application</string>
-    <string name="D_10299">Appliqu�</string>
+    <string name="D_10299">Applique</string>
     <string name="Answer_10299">B</string>
 
     <string name="Category_10300">Lifestyle</string>
@@ -2739,7 +2739,7 @@
     <string name="Answer_10341">D</string>
 
     <string name="Category_10342">Entertainment</string>
-    <string name="Question_10342">Complete the first line of the popular hymn: \'All things bright and �\' what?</string>
+    <string name="Question_10342">Complete the first line of the popular hymn: \'All things bright and …\' what?</string>
     <string name="A_10342">Shining</string>
     <string name="B_10342">Natural</string>
     <string name="C_10342">Beautiful</string>
@@ -2771,7 +2771,7 @@
     <string name="Answer_10345">B</string>
 
     <string name="Category_10346">Language</string>
-    <string name="Question_10346">If you deal with a challenge well, you are said to \'pass with flying�\' what?</string>
+    <string name="Question_10346">If you deal with a challenge well, you are said to \'pass with flying…\' what?</string>
     <string name="A_10346">Foxes</string>
     <string name="B_10346">Pickets</string>
     <string name="C_10346">Jackets</string>
@@ -2803,7 +2803,7 @@
     <string name="Answer_10349">B</string>
 
     <string name="Category_10350">Language</string>
-    <string name="Question_10350">To escape a situation without any injury is to remain �?</string>
+    <string name="Question_10350">To escape a situation without any injury is to remain …?</string>
     <string name="A_10350">Unsold</string>
     <string name="B_10350">Unscathed</string>
     <string name="C_10350">Unsolicited</string>
@@ -2811,7 +2811,7 @@
     <string name="Answer_10350">B</string>
 
     <string name="Category_10351">Language</string>
-    <string name="Question_10351">What does the word �discrete� mean?</string>
+    <string name="Question_10351">What does the word \'discrete\' mean?</string>
     <string name="A_10351">To avoid attention</string>
     <string name="B_10351">Separate,distinct</string>
     <string name="C_10351">Careful</string>
@@ -3155,7 +3155,7 @@
     <string name="Answer_10393">C</string>
 
     <string name="Category_10394">Sports_Hobbies</string>
-    <string name="Question_10394">How many community cards are dealt in Texas Hold �Em poker?</string>
+    <string name="Question_10394">How many community cards are dealt in Texas Hold \'Em poker?</string>
     <string name="A_10394">5</string>
     <string name="B_10394">6</string>
     <string name="C_10394">4</string>
@@ -3267,7 +3267,7 @@
     <string name="Answer_10407">C</string>
 
     <string name="Category_10408">History</string>
-    <string name="Question_10408">Attila was the king of the�</string>
+    <string name="Question_10408">Attila was the king of the…</string>
     <string name="A_10408">Huns</string>
     <string name="B_10408">Visigoths</string>
     <string name="C_10408">Romans</string>
@@ -3379,7 +3379,7 @@
     <string name="Answer_10421">B</string>
 
     <string name="Category_10422">Entertainment</string>
-    <string name="Question_10422">A hit by Gladys Knight &amp; the Pips was titled \'Midnight Train to�\' where?</string>
+    <string name="Question_10422">A hit by Gladys Knight &amp; the Pips was titled \'Midnight Train to…\' where?</string>
     <string name="A_10422">Mississippi</string>
     <string name="B_10422">Georgia</string>
     <string name="C_10422">Louisiana</string>
@@ -3867,7 +3867,7 @@
     <string name="Answer_10482">D</string>
 
     <string name="Category_10483">Language</string>
-    <string name="Question_10483">A ship in good enough condition to sail is said to be \'sea�\' what?</string>
+    <string name="Question_10483">A ship in good enough condition to sail is said to be \'sea…\' what?</string>
     <string name="A_10483">Able</string>
     <string name="B_10483">Creditable</string>
     <string name="C_10483">Fit</string>
@@ -3891,7 +3891,7 @@
     <string name="Answer_10485">A</string>
 
     <string name="Category_10486">Language</string>
-    <string name="Question_10486">Complete the name at the end of this saying, meaning \'It\'ll be done immediately\': \'Before you can say�\'</string>
+    <string name="Question_10486">Complete the name at the end of this saying, meaning \'It\'ll be done immediately\': \'Before you can say…\'</string>
     <string name="A_10486">Jim Parkinson</string>
     <string name="B_10486">John Tompkinson</string>
     <string name="C_10486">Jack Robinson</string>
@@ -3907,7 +3907,7 @@
     <string name="Answer_10487">B</string>
 
     <string name="Category_10488">Language</string>
-    <string name="Question_10488">What \'�is next to godliness\' according to the proverb?</string>
+    <string name="Question_10488">What \'is next to godliness\' according to the proverb?</string>
     <string name="A_10488">Friendliness</string>
     <string name="B_10488">Heavenliness</string>
     <string name="C_10488">Cleanliness</string>
@@ -4051,7 +4051,7 @@
     <string name="Answer_10505">C</string>
 
     <string name="Category_10506">Arts_Literature</string>
-    <string name="Question_10506">Complete this Shakespeare quote: \'\'To be, or not to be: that is the�\'\'?  </string>
+    <string name="Question_10506">Complete this Shakespeare quote: \'\'To be, or not to be: that is the…\'\'?  </string>
     <string name="A_10506">Key</string>
     <string name="B_10506">Problem</string>
     <string name="C_10506">Question</string>
@@ -4099,7 +4099,7 @@
     <string name="Answer_10511">A</string>
 
     <string name="Category_10512">Arts_Literature</string>
-    <string name="Question_10512">What is the name of Don Quixote�s sidekick?</string>
+    <string name="Question_10512">What is the name of Don Quixote\'s sidekick?</string>
     <string name="A_10512">Dr. Watson</string>
     <string name="B_10512">Huckleberry Finn</string>
     <string name="C_10512">Sancho Panza</string>
@@ -4195,7 +4195,7 @@
     <string name="Answer_10523">B</string>
 
     <string name="Category_10524">Science</string>
-    <string name="Question_10524">A \'tremor\' is a small�what?</string>
+    <string name="Question_10524">A \'tremor\' is a small what?</string>
     <string name="A_10524">Avalanche</string>
     <string name="B_10524">Tornado</string>
     <string name="C_10524">Tidal wave</string>
@@ -4227,7 +4227,7 @@
     <string name="Answer_10527">C</string>
 
     <string name="Category_10528">Science</string>
-    <string name="Question_10528">What did the Lumi�re brothers invent?</string>
+    <string name="Question_10528">What did the Lumiere brothers invent?</string>
     <string name="A_10528">Photograpy</string>
     <string name="B_10528">Cinema</string>
     <string name="C_10528">Electricity</string>
@@ -4387,7 +4387,7 @@
     <string name="Answer_10547">D</string>
 
     <string name="Category_10548">Sports_Hobbies</string>
-    <string name="Question_10548">Complete the famous quotation from the 1966 World Cup, \'They think it\'s all over �\'?</string>
+    <string name="Question_10548">Complete the famous quotation from the 1966 World Cup, \'They think it\'s all over…\'?</string>
     <string name="A_10548">Another goal</string>
     <string name="B_10548">Hurrah!</string>
     <string name="C_10548">It is now</string>
@@ -4435,7 +4435,7 @@
     <string name="Answer_10553">B</string>
 
     <string name="Category_10554">Entertainment</string>
-    <string name="Question_10554">Which song features the line \'The minute you walked in the joint�\'?</string>
+    <string name="Question_10554">Which song features the line \'The minute you walked in the joint…\'?</string>
     <string name="A_10554">Big Dipper</string>
     <string name="B_10554">Big Spender</string>
     <string name="C_10554">Big Bopper</string>
@@ -4483,7 +4483,7 @@
     <string name="Answer_10559">A</string>
 
     <string name="Category_10560">Entertainment</string>
-    <string name="Question_10560">Complete the lyrics of the Rihanna song, \'That was quite a show; very entertaining. But it\'s over now, go on and�\' what?</string>
+    <string name="Question_10560">Complete the lyrics of the Rihanna song, \'That was quite a show; very entertaining. But it\'s over now, go on and…\' what?</string>
     <string name="A_10560">Leave Me Now</string>
     <string name="B_10560">Wipe Your Brow</string>
     <string name="C_10560">Take a Bow</string>
@@ -4515,7 +4515,7 @@
     <string name="Answer_10563">C</string>
 
     <string name="Category_10564">Lifestyle</string>
-    <string name="Question_10564">Which of these is the term for any ros� or pink wine?</string>
+    <string name="Question_10564">Which of these is the term for any rose or pink wine?</string>
     <string name="A_10564">Mascara</string>
     <string name="B_10564">Lipstick</string>
     <string name="C_10564">Powder</string>
@@ -4763,7 +4763,7 @@
     <string name="Answer_10594">D</string>
 
     <string name="Category_10595">Sports_Hobbies</string>
-    <string name="Question_10595">Complete the name of the Major League Baseball team, the St. Louis �?</string>
+    <string name="Question_10595">Complete the name of the Major League Baseball team, the St. Louis…?</string>
     <string name="A_10595">Cardinals</string>
     <string name="B_10595">Padres</string>
     <string name="C_10595">Bishops</string>
@@ -5259,7 +5259,7 @@
     <string name="Answer_10656">C</string>
 
     <string name="Category_10657">Language</string>
-    <string name="Question_10657">Complete this proverb: \'Love me, love my�\'?</string>
+    <string name="Question_10657">Complete this proverb: \'Love me, love my…\'?</string>
     <string name="A_10657">Cat</string>
     <string name="B_10657">Work</string>
     <string name="C_10657">Dog</string>
@@ -5459,7 +5459,7 @@
     <string name="Answer_10681">D</string>
 
     <string name="Category_10682">Entertainment</string>
-    <string name="Question_10682">A cult classic murder-mystery series of 1990s television was called \'Twin�\' what?</string>
+    <string name="Question_10682">A cult classic murder-mystery series of 1990s television was called \'Twin…\' what?</string>
     <string name="A_10682">Falls</string>
     <string name="B_10682">Heights</string>
     <string name="C_10682">Peaks</string>
@@ -5523,7 +5523,7 @@
     <string name="Answer_10689">A</string>
 
     <string name="Category_10690">Entertainment</string>
-    <string name="Question_10690">Complete the cartoon canary Tweety\'s catchphrase, \'I tawt a taw a�\'?</string>
+    <string name="Question_10690">Complete the cartoon canary Tweety\'s catchphrase, \'I tawt a taw a…\'?</string>
     <string name="A_10690">Bunny wabbit</string>
     <string name="B_10690">Liddle mouse</string>
     <string name="C_10690">Puddy tat</string>
@@ -5531,7 +5531,7 @@
     <string name="Answer_10690">C</string>
 
     <string name="Category_10691">Entertainment</string>
-    <string name="Question_10691">Complete the title of the 2002 film \'Bend It Like�\'?</string>
+    <string name="Question_10691">Complete the title of the 2002 film \'Bend It Like…\'?</string>
     <string name="A_10691">Bergkamp</string>
     <string name="B_10691">Beckham</string>
     <string name="C_10691">Berger</string>
@@ -5539,7 +5539,7 @@
     <string name="Answer_10691">B</string>
 
     <string name="Category_10692">Entertainment</string>
-    <string name="Question_10692">Complete the title of the Julia Roberts film \'My Best Friend\'s�\'?</string>
+    <string name="Question_10692">Complete the title of the Julia Roberts film \'My Best Friend\'s…\'?</string>
     <string name="A_10692">Wedding</string>
     <string name="B_10692">Birthday</string>
     <string name="C_10692">Funeral</string>
@@ -5597,7 +5597,7 @@
     <string name="Category_10699">Science</string>
     <string name="Question_10699">Which of these is also known as the aurora borealis?</string>
     <string name="A_10699">Northern lights</string>
-    <string name="B_10699">El Ni�o</string>
+    <string name="B_10699">El Nino</string>
     <string name="C_10699">Caspian Sea</string>
     <string name="D_10699">Doldrums</string>
     <string name="Answer_10699">A</string>
@@ -6179,7 +6179,7 @@
     <string name="Answer_10771">D</string>
 
     <string name="Category_10772">History</string>
-    <string name="Question_10772">Which holiday does the Macy�s Day Parade commemorate?</string>
+    <string name="Question_10772">Which holiday does the Macy\'s Day Parade commemorate?</string>
     <string name="A_10772">Christmas</string>
     <string name="B_10772">Labor Day</string>
     <string name="C_10772">Thanksgiving</string>
@@ -6307,7 +6307,7 @@
     <string name="Answer_10787">B</string>
 
     <string name="Category_10788">Language</string>
-    <string name="Question_10788">A \'windfall\' is unexpected�what?</string>
+    <string name="Question_10788">A \'windfall\' is unexpected what?</string>
     <string name="A_10788">Illness</string>
     <string name="B_10788">Sleepiness</string>
     <string name="C_10788">Good luck</string>
@@ -6403,7 +6403,7 @@
     <string name="Answer_10799">A</string>
 
     <string name="Category_10800">Arts_Literature</string>
-    <string name="Question_10800">Repeating phonemes from the last stressed syllable at the end of verses is�</string>
+    <string name="Question_10800">Repeating phonemes from the last stressed syllable at the end of verses is called what?</string>
     <string name="A_10800">A rhyme</string>
     <string name="B_10800">A poem</string>
     <string name="C_10800">A lexeme</string>
@@ -6595,7 +6595,7 @@
     <string name="Answer_10823">D</string>
 
     <string name="Category_10824">Language</string>
-    <string name="Question_10824">If you take back something you said, you are said to \'eat your�\' what?</string>
+    <string name="Question_10824">If you take back something you said, you are said to \'eat your…\' what?</string>
     <string name="A_10824">Letters</string>
     <string name="B_10824">Words</string>
     <string name="C_10824">Syllables</string>
@@ -6659,7 +6659,7 @@
     <string name="Answer_10831">A</string>
 
     <string name="Category_10832">Science</string>
-    <string name="Question_10832">If you visit an ophthalmologist, you have a problem with your�</string>
+    <string name="Question_10832">If you visit an ophthalmologist, you have a problem with your what?</string>
     <string name="A_10832">Eyesight</string>
     <string name="B_10832">Bones</string>
     <string name="C_10832">Muscles</string>
@@ -7247,7 +7247,7 @@
     <string name="A_10905">Pierre</string>
     <string name="B_10905">Jacques</string>
     <string name="C_10905">Antoine</string>
-    <string name="D_10905">Fran�ois</string>
+    <string name="D_10905">Francois</string>
     <string name="Answer_10905">A</string>
 
     <string name="Category_10906">Entertainment</string>
@@ -7309,7 +7309,7 @@
     <string name="Category_10913">History</string>
     <string name="Question_10913">Which former world leader was born William Jefferson Blythe IV in 1946?</string>
     <string name="A_10913">Jacques Chirac</string>
-    <string name="B_10913">Jean Chr�tien</string>
+    <string name="B_10913">Jean Chretien</string>
     <string name="C_10913">Tony Blair</string>
     <string name="D_10913">Bill Clinton</string>
     <string name="Answer_10913">D</string>
@@ -7899,7 +7899,7 @@
     <string name="Answer_10986">B</string>
 
     <string name="Category_10987">Entertainment</string>
-    <string name="Question_10987">A hit for the Plain White T\'s was \'Hey There �\' what?</string>
+    <string name="Question_10987">A hit for the Plain White T\'s was \'Hey There…\' what?</string>
     <string name="A_10987">Jemima</string>
     <string name="B_10987">Amanda</string>
     <string name="C_10987">Fenella</string>
@@ -8003,7 +8003,7 @@
     <string name="Answer_10999">C</string>
 
     <string name="Category_11000">Sports_Hobbies</string>
-    <string name="Question_11000">A major toy craze in 1983 was a line of dolls called the \'Cabbage Patch�\' what?</string>
+    <string name="Question_11000">A major toy craze in 1983 was a line of dolls called the \'Cabbage Patch…\' what?</string>
     <string name="A_11000">Kids</string>
     <string name="B_11000">Gang</string>
     <string name="C_11000">Babies</string>
@@ -8075,7 +8075,7 @@
     <string name="Answer_11008">C</string>
 
     <string name="Category_11009">Entertainment</string>
-    <string name="Question_11009">Beyonc� was featured on \'Telephone\', a 2010 hit single for what artist?</string>
+    <string name="Question_11009">Beyonce was featured on \'Telephone\', a 2010 hit single for what artist?</string>
     <string name="A_11009">Snoop Dogg</string>
     <string name="B_11009">Kanye West</string>
     <string name="C_11009">Katy Perry</string>
@@ -8107,7 +8107,7 @@
     <string name="Answer_11012">B</string>
 
     <string name="Category_11013">Entertainment</string>
-    <string name="Question_11013">Complete the title of Garth Brooks\' album \'Ropin\' the �\'?</string>
+    <string name="Question_11013">Complete the title of Garth Brooks\' album \'Ropin\' the…\'?</string>
     <string name="A_11013">Steer</string>
     <string name="B_11013">Hog</string>
     <string name="C_11013">Corral</string>
@@ -8387,7 +8387,7 @@
     <string name="Answer_11047">B</string>
 
     <string name="Category_11048">Lifestyle</string>
-    <string name="Question_11048">What has 2�-foot eyes, a 3-foot mouth, and a 42-foot arm?</string>
+    <string name="Question_11048">What has 2-foot eyes, a 3-foot mouth, and a 42-foot arm?</string>
     <string name="A_11048">Angel of the North</string>
     <string name="B_11048">Statue of Liberty</string>
     <string name="C_11048">David</string>
@@ -8404,7 +8404,7 @@
 
     <string name="Category_11050">Entertainment</string>
     <string name="Question_11050">What show is Ryan Seacrest best known for hosting?</string>
-    <string name="A_11050">America�s Got Talent</string>
+    <string name="A_11050">America\'s Got Talent</string>
     <string name="B_11050">American Idol</string>
     <string name="C_11050">The Voice</string>
     <string name="D_11050">X Factor</string>
@@ -8651,7 +8651,7 @@
     <string name="Answer_11080">A</string>
 
     <string name="Category_11081">Arts_Literature</string>
-    <string name="Question_11081">Bonsai is the art of growing small, ornamental�what?</string>
+    <string name="Question_11081">Bonsai is the art of growing small, ornamental what?</string>
     <string name="A_11081">Insects</string>
     <string name="B_11081">Fish</string>
     <string name="C_11081">Trees</string>
@@ -8899,7 +8899,7 @@
     <string name="Answer_11111">D</string>
 
     <string name="Category_11112">Language</string>
-    <string name="Question_11112">In Spanish, what does the word ma�ana mean?</string>
+    <string name="Question_11112">In Spanish, what does the word manana mean?</string>
     <string name="A_11112">You\'re welcome</string>
     <string name="B_11112">Pretty please</string>
     <string name="C_11112">Tomorrow</string>
@@ -9523,7 +9523,7 @@
     <string name="Answer_11189">A</string>
 
     <string name="Category_11190">Lifestyle</string>
-    <string name="Question_11190">When is Barack Obama�s birthday?</string>
+    <string name="Question_11190">When is Barack Obama\'s birthday?</string>
     <string name="A_11190">November 20th</string>
     <string name="B_11190">March 2nd</string>
     <string name="C_11190">August 4th</string>
@@ -10015,7 +10015,7 @@
     <string name="A_11251">Florentine</string>
     <string name="B_11251">Julienne</string>
     <string name="C_11251">Veronique</string>
-    <string name="D_11251">Meuni�re</string>
+    <string name="D_11251">Meuniere</string>
     <string name="Answer_11251">A</string>
 
     <string name="Category_11252">Lifestyle</string>
@@ -10043,7 +10043,7 @@
     <string name="Answer_11254">A</string>
 
     <string name="Category_11255">Lifestyle</string>
-    <string name="Question_11255">In Greek mythology, Zeus is the son of�</string>
+    <string name="Question_11255">In Greek mythology, Zeus is the son of who?</string>
     <string name="A_11255">Poseidon</string>
     <string name="B_11255">Cronus</string>
     <string name="C_11255">Hades</string>
@@ -10107,7 +10107,7 @@
     <string name="Answer_11262">B</string>
 
     <string name="Category_11263">Arts_Literature</string>
-    <string name="Question_11263">Complete the title of the Ernest Hemingway story: \'The Snows of �\' where?</string>
+    <string name="Question_11263">Complete the title of the Ernest Hemingway story: \'The Snows of…\' where?</string>
     <string name="A_11263">Kilimanjaro</string>
     <string name="B_11263">Everest</string>
     <string name="C_11263">K2</string>
@@ -10115,7 +10115,7 @@
     <string name="Answer_11263">A</string>
 
     <string name="Category_11264">Arts_Literature</string>
-    <string name="Question_11264">Complete the title of the Noel Coward play \'Private �\'?</string>
+    <string name="Question_11264">Complete the title of the Noel Coward play \'Private…\'?</string>
     <string name="A_11264">Dancer</string>
     <string name="B_11264">Lives</string>
     <string name="C_11264">Investigator</string>
@@ -10163,7 +10163,7 @@
     <string name="Answer_11269">C</string>
 
     <string name="Category_11270">Arts_Literature</string>
-    <string name="Question_11270">Repeating the same sound for two or more groups of words is known as�</string>
+    <string name="Question_11270">Repeating the same sound for two or more groups of words is known as which of these?</string>
     <string name="A_11270">Alliteration</string>
     <string name="B_11270">Metonymy</string>
     <string name="C_11270">Hyperbaton</string>
@@ -10235,7 +10235,7 @@
     <string name="Answer_11278">A</string>
 
     <string name="Category_11279">Geography</string>
-    <string name="Question_11279">According to George Bernard Shaw, which two countries \'�.are divided by a common language.\'? </string>
+    <string name="Question_11279">According to George Bernard Shaw, which two countries \'are divided by a common language.\'? </string>
     <string name="A_11279">Scotland &amp; Ireland</string>
     <string name="B_11279">Spain &amp; Mexico</string>
     <string name="C_11279">America &amp; England</string>
@@ -10723,7 +10723,7 @@
     <string name="Answer_11339">C</string>
 
     <string name="Category_11340">Science</string>
-    <string name="Question_11340">Also called the giant gum, what is Australia�s tallest tree?</string>
+    <string name="Question_11340">Also called the giant gum, what is Australia\'s tallest tree?</string>
     <string name="A_11340">Mountain ash</string>
     <string name="B_11340">Karri</string>
     <string name="C_11340">Jarrah</string>
@@ -11331,7 +11331,7 @@
     <string name="Answer_11415">B</string>
 
     <string name="Category_11416">Entertainment</string>
-    <string name="Question_11416">Complete the title of the \'Evita\' song \'Another Suitcase in Another �\' what?</string>
+    <string name="Question_11416">Complete the title of the \'Evita\' song \'Another Suitcase in Another…\' what?</string>
     <string name="A_11416">Hold</string>
     <string name="B_11416">Hall</string>
     <string name="C_11416">Hotel room</string>
@@ -11339,7 +11339,7 @@
     <string name="Answer_11416">B</string>
 
     <string name="Category_11417">Entertainment</string>
-    <string name="Question_11417">Complete the title of the 1983 film starring David Bowie, \'Merry Christmas, Mr. �\'?</string>
+    <string name="Question_11417">Complete the title of the 1983 film starring David Bowie, \'Merry Christmas, Mr. …\'?</string>
     <string name="A_11417">Magoo</string>
     <string name="B_11417">Benn</string>
     <string name="C_11417">Lawrence</string>
@@ -11563,7 +11563,7 @@
     <string name="Answer_11444">C</string>
 
     <string name="Category_11445">Arts_Literature</string>
-    <string name="Question_11445">Which school of architecture does Frank Lloyd Wright�s work belong to?</string>
+    <string name="Question_11445">Which school of architecture does Frank Lloyd Wright\'s work belong to?</string>
     <string name="A_11445">Praire School</string>
     <string name="B_11445">Gothic</string>
     <string name="C_11445">Romantic</string>
@@ -11571,7 +11571,7 @@
     <string name="Answer_11445">A</string>
 
     <string name="Category_11446">History</string>
-    <string name="Question_11446">Which subject \'�.is more or less bunk.\' according to the famous quote by Henry Ford?</string>
+    <string name="Question_11446">Which subject \'is more or less bunk.\' according to the famous quote by Henry Ford?</string>
     <string name="A_11446">Chemistry</string>
     <string name="B_11446">History</string>
     <string name="C_11446">Psychology</string>
@@ -11707,7 +11707,7 @@
     <string name="Answer_11462">A</string>
 
     <string name="Category_11463">Science</string>
-    <string name="Question_11463">Which theory was first advanced by Georges Lema�tre?</string>
+    <string name="Question_11463">Which theory was first advanced by Georges Lemaitre?</string>
     <string name="A_11463">Big Bang</string>
     <string name="B_11463">Evolution</string>
     <string name="C_11463">Chaos</string>
@@ -11811,7 +11811,7 @@
     <string name="Answer_11475">A</string>
 
     <string name="Category_11476">Language</string>
-    <string name="Question_11476">How do you say �court� in Spanish?</string>
+    <string name="Question_11476">How do you say \'court\' in Spanish?</string>
     <string name="A_11476">Jurado</string>
     <string name="B_11476">Miembro del jurado</string>
     <string name="C_11476">Juzgado</string>
@@ -11859,7 +11859,7 @@
     <string name="Answer_11481">C</string>
 
     <string name="Category_11482">Language</string>
-    <string name="Question_11482">What would you wear in Germany if they gave you a �mantel�?</string>
+    <string name="Question_11482">What would you wear in Germany if they gave you a \'mantel\'?</string>
     <string name="A_11482">A coat</string>
     <string name="B_11482">A dress</string>
     <string name="C_11482">A blanket</string>
@@ -12027,7 +12027,7 @@
     <string name="Answer_11502">C</string>
 
     <string name="Category_11503">Sports_Hobbies</string>
-    <string name="Question_11503">In which year did Bj�rn Borg win his first Wimbledon mens\' singles title?</string>
+    <string name="Question_11503">In which year did Bjorn Borg win his first Wimbledon mens\' singles title?</string>
     <string name="A_11503">1974</string>
     <string name="B_11503">1976</string>
     <string name="C_11503">1978</string>
@@ -12299,7 +12299,7 @@
     <string name="Answer_11536">D</string>
 
     <string name="Category_11537">Entertainment</string>
-    <string name="Question_11537">According to their song in \'The Mikado,\' Yum-yum, Pitti-sing and Peep-bo are \'Three Little Maids From�.\' where?</string>
+    <string name="Question_11537">According to their song in \'The Mikado,\' Yum-yum, Pitti-sing and Peep-bo are \'Three Little Maids From…\' where?</string>
     <string name="A_11537">The Country</string>
     <string name="B_11537">School</string>
     <string name="C_11537">The Mission</string>
@@ -12307,7 +12307,7 @@
     <string name="Answer_11537">B</string>
 
     <string name="Category_11538">Entertainment</string>
-    <string name="Question_11538">A 1970 film was titled \'Suppose They Gave a War and�\' what\'?</string>
+    <string name="Question_11538">A 1970 film was titled \'Suppose They Gave a War and…\' what\'?</string>
     <string name="A_11538">Nobody came?</string>
     <string name="B_11538">Nobody died?</string>
     <string name="C_11538">Nobody bothered?</string>
@@ -12315,7 +12315,7 @@
     <string name="Answer_11538">A</string>
 
     <string name="Category_11539">Entertainment</string>
-    <string name="Question_11539">A 2008 thriller film was called \'The Haunting of�\' who?</string>
+    <string name="Question_11539">A 2008 thriller film was called \'The Haunting of…\' who?</string>
     <string name="A_11539">Polly Hancock</string>
     <string name="B_11539">Dolly Harris</string>
     <string name="C_11539">Molly Hartley</string>
@@ -12507,7 +12507,7 @@
     <string name="Answer_11562">A</string>
 
     <string name="Category_11563">Entertainment</string>
-    <string name="Question_11563">According to the comedy single by Elmo and Patsy, \'Grandma Got Run Over By A �\'?</string>
+    <string name="Question_11563">According to the comedy single by Elmo and Patsy, \'Grandma Got Run Over By A…\'?</string>
     <string name="A_11563">Snowball</string>
     <string name="B_11563">Sleigh</string>
     <string name="C_11563">Reindeer</string>
@@ -12515,7 +12515,7 @@
     <string name="Answer_11563">C</string>
 
     <string name="Category_11564">Geography</string>
-    <string name="Question_11564">Cali and Medell�n are the second and third largest cities in which South American country?</string>
+    <string name="Question_11564">Cali and Medellin are the second and third largest cities in which South American country?</string>
     <string name="A_11564">Argentina</string>
     <string name="B_11564">Bolivia</string>
     <string name="C_11564">Colombia</string>
@@ -12990,7 +12990,7 @@
     <string name="Question_11623">What is the capital of the west African country of Benin?</string>
     <string name="A_11623">Oporto</string>
     <string name="B_11623">Porto-Novo</string>
-    <string name="C_11623">P�rto Alegre</string>
+    <string name="C_11623">Porto Alegre</string>
     <string name="D_11623">Port-au-Prince</string>
     <string name="Answer_11623">B</string>
 
@@ -13283,7 +13283,7 @@
     <string name="Answer_11659">A</string>
 
     <string name="Category_11660">Arts_Literature</string>
-    <string name="Question_11660">A famous line spoken by Shakespeare\'s Hamlet is \'Alas, poor Yorick! I knew him�\' what?</string>
+    <string name="Question_11660">A famous line spoken by Shakespeare\'s Hamlet is \'Alas, poor Yorick! I knew him…\' what?</string>
     <string name="A_11660">Well</string>
     <string name="B_11660">Once</string>
     <string name="C_11660">Ophelia</string>
@@ -13501,8 +13501,8 @@
     <string name="Category_11687">History</string>
     <string name="Question_11687">Which world event was triggered by the death of Austrian archduke Franz Ferdinand?</string>
     <string name="A_11687">World War II</string>
-    <string name="B_11687">Hundred Years� War</string>
-    <string name="C_11687">Thirty Years� War</string>
+    <string name="B_11687">Hundred Years\' War</string>
+    <string name="C_11687">Thirty Years\' War</string>
     <string name="D_11687">World War I</string>
     <string name="Answer_11687">D</string>
 
@@ -13652,7 +13652,7 @@
 
     <string name="Category_11706">Entertainment</string>
     <string name="Question_11706">What phrase were Siskel and Ebert known for?</string>
-    <string name="A_11706">That�s hot</string>
+    <string name="A_11706">That\'s hot</string>
     <string name="B_11706">Good night friends</string>
     <string name="C_11706">Two thumbs up</string>
     <string name="D_11706">Come on down!</string>
@@ -13875,11 +13875,11 @@
     <string name="Answer_11733">B</string>
 
     <string name="Category_11734">Science</string>
-    <string name="Question_11734">What is the Celsius equivalent of 77� Fahrenheit?</string>
-    <string name="A_11734">10� C</string>
-    <string name="B_11734">15� C</string>
-    <string name="C_11734">25� C</string>
-    <string name="D_11734">30� C</string>
+    <string name="Question_11734">What is the Celsius equivalent of 77 degrees Fahrenheit?</string>
+    <string name="A_11734">10 degrees Celsius</string>
+    <string name="B_11734">15 Celsius</string>
+    <string name="C_11734">25 degrees Celsius</string>
+    <string name="D_11734">30 degrees Celsius</string>
     <string name="Answer_11734">C</string>
 
     <string name="Category_11735">Science</string>
@@ -14131,7 +14131,7 @@
     <string name="Answer_11765">C</string>
 
     <string name="Category_11766">Lifestyle</string>
-    <string name="Question_11766">What is the literal translation of the cocktail pi�a colada?</string>
+    <string name="Question_11766">What is the literal translation of the cocktail pina colada?</string>
     <string name="A_11766">Cold pineapple</string>
     <string name="B_11766">Iced pineapple</string>
     <string name="C_11766">Strained pineapple</string>
@@ -14267,7 +14267,7 @@
     <string name="Answer_11782">C</string>
 
     <string name="Category_11783">Sports_Hobbies</string>
-    <string name="Question_11783">How is a 3� front twisting somersault known in gymnastics?</string>
+    <string name="Question_11783">How is a 3.5 front twisting somersault known in gymnastics?</string>
     <string name="A_11783">Adrian</string>
     <string name="B_11783">Adolph</string>
     <string name="C_11783">Albert</string>
@@ -14363,7 +14363,7 @@
     <string name="Answer_11794">C</string>
 
     <string name="Category_11795">Arts_Literature</string>
-    <string name="Question_11795">Complete the title of this Beatrix Potter story: \'The Tale of Timmy �\' who?</string>
+    <string name="Question_11795">Complete the title of this Beatrix Potter story: \'The Tale of Timmy…\' who?</string>
     <string name="A_11795">Tucker</string>
     <string name="B_11795">Turtle</string>
     <string name="C_11795">Tiptoes</string>
@@ -14452,7 +14452,7 @@
 
     <string name="Category_11806">Arts_Literature</string>
     <string name="Question_11806">Which Impressionist painted scenes from New Orleans, Louisiana from 1872 to 1873?</string>
-    <string name="A_11806">C�zanne</string>
+    <string name="A_11806">Cezanne</string>
     <string name="B_11806">Monet</string>
     <string name="C_11806">Seurat</string>
     <string name="D_11806">Degas</string>
@@ -14523,7 +14523,7 @@
     <string name="Answer_11814">C</string>
 
     <string name="Category_11815">Entertainment</string>
-    <string name="Question_11815">Complete the title of the 1970s TV series \'Alias Smith and �\' who?</string>
+    <string name="Question_11815">Complete the title of the 1970s TV series \'Alias Smith and…\' who?</string>
     <string name="A_11815">Woods</string>
     <string name="B_11815">Jones</string>
     <string name="C_11815">Biggs</string>
@@ -14531,7 +14531,7 @@
     <string name="Answer_11815">B</string>
 
     <string name="Category_11816">Entertainment</string>
-    <string name="Question_11816">Complete the title of the 1971 film based on an Agatha Christie novel, \'Endless �\'?</string>
+    <string name="Question_11816">Complete the title of the 1971 film based on an Agatha Christie novel, \'Endless…\'?</string>
     <string name="A_11816">Day</string>
     <string name="B_11816">Morning</string>
     <string name="C_11816">Night</string>
@@ -14539,7 +14539,7 @@
     <string name="Answer_11816">C</string>
 
     <string name="Category_11817">Entertainment</string>
-    <string name="Question_11817">Elton John sang two versions of Candle in the Wind, one dedicated to Diana Princess of Wales and a previous one to�</string>
+    <string name="Question_11817">Elton John sang two versions of Candle in the Wind, one dedicated to Diana Princess of Wales and a previous one to who?</string>
     <string name="A_11817">Julia Roberts</string>
     <string name="B_11817">Liz Taylor</string>
     <string name="C_11817">Grace Kelly</string>
@@ -14740,7 +14740,7 @@
 
     <string name="Category_11842">Entertainment</string>
     <string name="Question_11842">Who first coined the expression \'ladies who lunch\'?</string>
-    <string name="A_11842">No�l Coward</string>
+    <string name="A_11842">Noel Coward</string>
     <string name="B_11842">Stephen Sondheim</string>
     <string name="C_11842">W S Gilbert</string>
     <string name="D_11842">Oscar Wilde</string>
@@ -14779,8 +14779,8 @@
     <string name="Answer_11846">C</string>
 
     <string name="Category_11847">Language</string>
-    <string name="Question_11847">What does the word �rebab� mean?</string>
-    <string name="A_11847">Bowed string instru.</string>
+    <string name="Question_11847">What does the word \'rebab\' mean?</string>
+    <string name="A_11847">Bowed string instrument</string>
     <string name="B_11847">Foolish/excited talk</string>
     <string name="C_11847">A jester or clown</string>
     <string name="D_11847">Reuse of old ideas</string>
@@ -14883,7 +14883,7 @@
     <string name="Answer_11859">A</string>
 
     <string name="Category_11860">Language</string>
-    <string name="Question_11860">What is the meaning of the Spanish word �bizarro�?</string>
+    <string name="Question_11860">What is the meaning of the Spanish word \'bizarro\'?</string>
     <string name="A_11860">Strange</string>
     <string name="B_11860">Creative</string>
     <string name="C_11860">Cheap</string>
@@ -14987,7 +14987,7 @@
     <string name="Answer_11872">C</string>
 
     <string name="Category_11873">Geography</string>
-    <string name="Question_11873">Which African country has its capital in Yaound�?</string>
+    <string name="Question_11873">Which African country has its capital in Yaounde?</string>
     <string name="A_11873">Algeria</string>
     <string name="B_11873">Chad</string>
     <string name="C_11873">Cameroon</string>
@@ -15299,7 +15299,7 @@
     <string name="Answer_11911">A</string>
 
     <string name="Category_11912">Entertainment</string>
-    <string name="Question_11912">A cimbalom is a�</string>
+    <string name="Question_11912">A cimbalom is which of these?</string>
     <string name="A_11912">Musical instrument</string>
     <string name="B_11912">Type of glove</string>
     <string name="C_11912">Inuit shoe</string>
@@ -15603,7 +15603,7 @@
     <string name="Answer_11949">C</string>
 
     <string name="Category_11950">Geography</string>
-    <string name="Question_11950">In which country was the world�s first air-mail service initiated in 1911?</string>
+    <string name="Question_11950">In which country was the world\'s first air-mail service initiated in 1911?</string>
     <string name="A_11950">Australia</string>
     <string name="B_11950">USA</string>
     <string name="C_11950">France</string>
@@ -15851,7 +15851,7 @@
     <string name="Answer_11980">A</string>
 
     <string name="Category_11981">Lifestyle</string>
-    <string name="Question_11981">In Norway, what are Bokm�l and Nynorsk?</string>
+    <string name="Question_11981">In Norway, what are Bokmal and Nynorsk?</string>
     <string name="A_11981">Forms of Norwegian</string>
     <string name="B_11981">A pop duo</string>
     <string name="C_11981">Fjords</string>
