@@ -1,11 +1,21 @@
 package com.example.a357project
 
+import android.content.ContentValues
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.*
+import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Environment
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import java.io.File
+import java.io.FileOutputStream
+import java.util.*
 
 class WrongAnswerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,10 +28,103 @@ class WrongAnswerActivity : AppCompatActivity() {
         val finalStreak = findViewById<TextView>(R.id.wcurrentStreak)
         val longestStreak = findViewById<TextView>(R.id.wLongestStreak)
 
-        var finalStreakSaved = sPref.getInt("currentStreak", 0)
-        var longestStreakSaved = sPref.getInt("maxStreak", 0)
+        val finalStreakSaved = sPref.getInt("currentStreak", 0)
+        val longestStreakSaved = sPref.getInt("maxStreak", 0)
         finalStreak.text = "Final Streak: $finalStreakSaved questions"
         longestStreak.text = "Lonqest Streak: $longestStreakSaved questions"
+
+        /* Image generation code sourced from StackOverflow thread here:
+           https://stackoverflow.com/questions/9124896/generate-a-image-with-custom-text-in-android
+         */
+        var source = BitmapFactory.decodeResource(resources, R.drawable.endcard)
+        var saved : Bitmap = Bitmap.createBitmap(source.width, source.height, Bitmap.Config.ARGB_8888)
+        val cal = Calendar.getInstance()
+        val year = cal.get(Calendar.YEAR)
+        val month = cal.get(Calendar.MONTH)
+        val day = cal.get(Calendar.DAY_OF_MONTH)
+        val second = cal.get(Calendar.SECOND)
+        val imgHeader = "Stats for today, $year-$month-$day:"
+        val streakText = "Today's Streak: $finalStreakSaved"
+        val bestText = "High Score: $longestStreakSaved"
+        val timerOn = "Timer: [isTimer or something]"
+
+        var canvas = Canvas(saved)
+        var paint = Paint()
+        paint.textSize = 120F
+        paint.color = Color.GREEN
+        paint.style = Paint.Style.FILL
+        canvas.drawBitmap(source, 0f, 0F, null)
+        val height = paint.measureText("yY") + 1100F
+        val width = paint.measureText(imgHeader)
+        val x = (source.width - width) / 2
+        canvas.drawText(imgHeader, x, height, paint)
+        canvas.drawText(streakText, x, height+150F, paint)
+        canvas.drawText(bestText, x, height+300F, paint)
+        canvas.drawText(timerOn, x, height+450F, paint)
+
+        /* In future, save to different directory with intent to auto-delete
+        saves until user purposely requests to keep them. Cache? Trash?
+        Somewhere else? */
+
+        /* Now, save using MediaStore API if on Android 10+.*/
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+        try {
+                val resolver = contentResolver
+                val values = ContentValues()
+                /* Perhaps come up with a better filename scheme later. */
+                values.put(MediaStore.MediaColumns.DISPLAY_NAME, "Image_$year$month$day$second.jpg")
+                values.put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
+                values.put(
+                    MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES +
+                            File.separator + "357Project"
+                )
+
+                val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values)
+                val outputStream = Objects.requireNonNull(uri)
+                    ?.let { resolver.openOutputStream(it) }
+                Thread {
+                    saved.compress(
+                        Bitmap.CompressFormat.JPEG, 100,
+                        outputStream
+                    )
+                    /* This must be done within the thread, else things turn out
+                       empty which is unideal. */
+                    outputStream?.flush()
+                    outputStream?.close()
+                }.start()
+                Objects.requireNonNull(outputStream)
+
+
+                Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
+            } catch (exception : Exception) {
+                Toast.makeText(this, "Failed to save.", Toast.LENGTH_SHORT).show()
+            }
+        } else {
+            /* Alternative method for older APIs. */
+            val root = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+                .toString() + "/357Project"
+            val directory = File(root)
+            directory.mkdirs()
+            val file = File(directory, "Image_$year$month$day$second.jpg")
+            /* Possibly unnecessary? Not sure if this method auto-renames files for redundancy
+               so I left it in here. */
+            if (file.exists()) {
+                file.delete()
+            }
+            try {
+                val outputStream = FileOutputStream(file)
+                Thread {
+                    saved.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+                    /* Again, make sure this remains in the thread or things get ugly. */
+                    outputStream.flush()
+                    outputStream.close()
+                }.start()
+                Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
+            } catch (exception : Exception) {
+                Toast.makeText(this, "Failed to save.", Toast.LENGTH_SHORT).show()
+            }
+
+        }
 
         tryAgainButton.setOnClickListener {
             finish()
