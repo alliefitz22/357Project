@@ -19,6 +19,7 @@ class StatsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stats)
+        title = "Stats"
         val sPref = applicationContext.getSharedPreferences("MyPref", 0)
         val statHomeButton = findViewById<Button>(R.id.stats2home)
         val streakValue = findViewById<TextView>(R.id.streakValue)

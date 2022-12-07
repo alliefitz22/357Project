@@ -12,6 +12,8 @@ class HowToPlay2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_how_to_play2)
 
+        title = "How to Play"
+
         val homeButton = findViewById<Button>(R.id.h2pHome)
         val backButton = findViewById<Button>(R.id.h2pBackButton)
 

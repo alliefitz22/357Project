@@ -33,6 +33,9 @@ class WrongAnswerActivity : AppCompatActivity() {
 
         val finalStreakSaved = sPref.getInt("currentStreak", 0)
         val longestStreakSaved = sPref.getInt("maxStreak", 0)
+
+        title = "Question " + (finalStreakSaved + 1)
+
         finalStreak.text = "Final Streak: $finalStreakSaved questions"
         longestStreak.text = "Lonqest Streak: $longestStreakSaved questions"
         editor.putInt("currentStreak", 0)

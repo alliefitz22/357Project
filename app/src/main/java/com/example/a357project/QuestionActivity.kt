@@ -25,6 +25,7 @@ class QuestionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_question)
         //shared preferences initialization
         val sPref: SharedPreferences = applicationContext.getSharedPreferences("MyPref", 0)
+        title = "Question " + (sPref.getInt("currentStreak", 0) + 1)
         val editor: SharedPreferences.Editor = sPref.edit()
 
 

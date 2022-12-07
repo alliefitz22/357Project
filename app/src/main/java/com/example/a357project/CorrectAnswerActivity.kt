@@ -19,6 +19,9 @@ class CorrectAnswerActivity : AppCompatActivity() {
         val longestStreak = findViewById<TextView>(R.id.cLongestStreak)
 
         val currentStreakSaved = sPref.getInt("currentStreak", 0)
+
+        title = "Question $currentStreakSaved"
+
         currentStreak.text = "Current Streak: $currentStreakSaved questions"
         var longestStreakSaved = sPref.getInt("maxStreak", 0)
         if (currentStreakSaved > longestStreakSaved) {
