@@ -16,17 +16,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val sPref = applicationContext.getSharedPreferences("MyPref", 0)
-        val editor: SharedPreferences.Editor = sPref.edit()
         if (!(sPref.contains("currentStreak"))){
+            val editor: SharedPreferences.Editor = sPref.edit()
             editor.putInt("currentStreak", 0)
             editor.putInt("maxStreak", 0)
             editor.apply()
         }
-        if (!(sPref.contains("diffValue"))){
-            editor.putString("diffValue", "Easy")
-            editor.apply()
-        }
-
 
 
 

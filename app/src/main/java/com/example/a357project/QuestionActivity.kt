@@ -53,7 +53,7 @@ class QuestionActivity : AppCompatActivity() {
         var dIsClicked: Boolean = false
         val progressBar = findViewById<ProgressBar>(R.id.progressBar) as ProgressBar
         var progressStatus = 0
-        var difficulty: String? = sPref.getString("diffValue", "Easy")
+        var difficulty: String = "Easy"
         var counter = 0
 
 
