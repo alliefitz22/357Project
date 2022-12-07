@@ -29,15 +29,15 @@ class CorrectAnswerActivity : AppCompatActivity() {
         longestStreak.text = "Longest Streak: $longestStreakSaved questions"
 
         continueButton.setOnClickListener {
+            finish()
             val i = Intent(this, QuestionActivity::class.java )
             startActivity(i)
-            finish()
         }
         stopButton.setOnClickListener {
+            finish()
             //this is where we need to go back to the main screen
            val i = Intent(this, MainActivity::class.java )
            startActivity(i)
-            finish()
         }
 
     }
