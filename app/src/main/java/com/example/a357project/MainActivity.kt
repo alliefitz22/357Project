@@ -33,12 +33,6 @@ class MainActivity : AppCompatActivity() {
 
         val playButton = findViewById<Button>(R.id.playButton)
         val statsButton = findViewById<Button>(R.id.statsButton)
-        val h2pButton = findViewById<Button>(R.id.howToPlay)
-
-        h2pButton.setOnClickListener{
-            val i = Intent(this, HowToPlayActivity::class.java)
-            startActivity(i)
-        }
 
 
         playButton.setOnClickListener {

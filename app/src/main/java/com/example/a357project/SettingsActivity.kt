@@ -9,11 +9,6 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.a357project.databinding.ActivitySettingsBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class SettingsActivity : AppCompatActivity() {
@@ -32,8 +27,8 @@ class SettingsActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             editor.putString("diffValue", diffSelection)
             editor.apply()
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
+            /*val i = Intent(this, MainActivity::class.java)
+            startActivity(i)*/
             finish()
         }
         val diffSpinner = findViewById<Spinner>(R.id.diffSpinner)

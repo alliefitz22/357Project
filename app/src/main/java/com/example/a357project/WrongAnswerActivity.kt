@@ -49,8 +49,8 @@ class WrongAnswerActivity : AppCompatActivity() {
         }
         stopButton.setOnClickListener {
 
-            val i = Intent(this, MainActivity::class.java )
-            startActivity(i)
+            /*val i = Intent(this, MainActivity::class.java )
+            startActivity(i)*/
             finish()
 
         }

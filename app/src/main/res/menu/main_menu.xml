@@ -3,9 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/settings_action"
-        android:title="Settings" />
-    <item
         android:id="@+id/HTP_action"
-        android:title="How To Play" />
+        android:title="How To Play"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/settings_action"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
 </menu>

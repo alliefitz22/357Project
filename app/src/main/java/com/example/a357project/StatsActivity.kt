@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import java.io.File
@@ -39,6 +41,24 @@ class StatsActivity : AppCompatActivity() {
                 startActivity(i)
             }
         }
+    }
+    override fun onCreateOptionsMenu(menu: Menu?):Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.settings_action) {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+            return true
+        }
+        if (item.itemId == R.id.HTP_action) {
+            val intent = Intent(this, HowToPlayActivity::class.java)
+            startActivity(intent)
+            return true
+        }
+        return false
     }
 
 

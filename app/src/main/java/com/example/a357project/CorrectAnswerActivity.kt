@@ -35,8 +35,8 @@ class CorrectAnswerActivity : AppCompatActivity() {
         }
         stopButton.setOnClickListener {
             //this is where we need to go back to the main screen
-           val i = Intent(this, MainActivity::class.java )
-           startActivity(i)
+           /*val i = Intent(this, MainActivity::class.java )
+           startActivity(i)*/
             finish()
         }
 
