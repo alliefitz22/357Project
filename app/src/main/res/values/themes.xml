@@ -22,4 +22,8 @@
     <style name="Theme.357Project.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.357Project.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Style to replace actionbar overflow icon. set item 'android:actionOverflowButtonStyle' in AppTheme -->
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_baseline_help_24</item>
+    </style>
 </resources>

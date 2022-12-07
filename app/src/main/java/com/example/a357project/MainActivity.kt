@@ -74,6 +74,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             return true
         }
+        if (item.itemId == R.id.HTP_action) {
+            val intent = Intent(this@MainActivity, HowToPlayActivity::class.java)
+            startActivity(intent)
+            return true
+        }
         return false
     }
 }
