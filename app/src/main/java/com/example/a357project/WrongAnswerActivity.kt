@@ -25,6 +25,7 @@ class WrongAnswerActivity : AppCompatActivity() {
         val editor: SharedPreferences.Editor = sPref.edit()
         val tryAgainButton = findViewById<Button>(R.id.tryAgainButton)
         val stopButton = findViewById<Button>(R.id.wHome)
+        val saveScoreButton = findViewById<Button>(R.id.saveButton)
         val finalStreak = findViewById<TextView>(R.id.wcurrentStreak)
         val longestStreak = findViewById<TextView>(R.id.wLongestStreak)
 
@@ -33,20 +34,47 @@ class WrongAnswerActivity : AppCompatActivity() {
         finalStreak.text = "Final Streak: $finalStreakSaved questions"
         longestStreak.text = "Lonqest Streak: $longestStreakSaved questions"
 
+        saveScoreButton.setOnClickListener {
+            generateImage(finalStreakSaved, longestStreakSaved, sPref)
+        }
+
+        tryAgainButton.setOnClickListener {
+            finish()
+            editor.putInt("currentStreak", 0)
+            editor.apply()
+            val i = Intent(this, QuestionActivity::class.java)
+            startActivity(i)
+            //Also add code to reset streak
+        }
+        stopButton.setOnClickListener {
+            finish()
+            editor.putInt("currentStreak", 0)
+            editor.apply()
+            //Add code to reset streak
+            val i = Intent(this, MainActivity::class.java )
+            startActivity(i)
+
+        }
+    }
+
+    private fun generateImage(finalStreakSaved: Int, longestStreakSaved: Int, sPref: SharedPreferences) {
         /* Image generation code sourced from StackOverflow thread here:
            https://stackoverflow.com/questions/9124896/generate-a-image-with-custom-text-in-android
          */
         var source = BitmapFactory.decodeResource(resources, R.drawable.endcard)
-        var saved : Bitmap = Bitmap.createBitmap(source.width, source.height, Bitmap.Config.ARGB_8888)
+        var saved: Bitmap =
+            Bitmap.createBitmap(source.width, source.height, Bitmap.Config.ARGB_8888)
         val cal = Calendar.getInstance()
         val year = cal.get(Calendar.YEAR)
         val month = cal.get(Calendar.MONTH)
         val day = cal.get(Calendar.DAY_OF_MONTH)
         val second = cal.get(Calendar.SECOND)
+        val diff = sPref.getString("diffValue", "Easy")
         val imgHeader = "Stats for today, $year-$month-$day:"
         val streakText = "Today's Streak: $finalStreakSaved"
         val bestText = "High Score: $longestStreakSaved"
-        val timerOn = "Timer: [isTimer or something]"
+        val timerOn = "Difficulty: $diff"
+
 
         var canvas = Canvas(saved)
         var paint = Paint()
@@ -58,9 +86,9 @@ class WrongAnswerActivity : AppCompatActivity() {
         val width = paint.measureText(imgHeader)
         val x = (source.width - width) / 2
         canvas.drawText(imgHeader, x, height, paint)
-        canvas.drawText(streakText, x, height+150F, paint)
-        canvas.drawText(bestText, x, height+300F, paint)
-        canvas.drawText(timerOn, x, height+450F, paint)
+        canvas.drawText(streakText, x, height + 150F, paint)
+        canvas.drawText(bestText, x, height + 300F, paint)
+        canvas.drawText(timerOn, x, height + 450F, paint)
 
         /* In future, save to different directory with intent to auto-delete
         saves until user purposely requests to keep them. Cache? Trash?
@@ -68,7 +96,7 @@ class WrongAnswerActivity : AppCompatActivity() {
 
         /* Now, save using MediaStore API if on Android 10+.*/
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-        try {
+            try {
                 val resolver = contentResolver
                 val values = ContentValues()
                 /* Perhaps come up with a better filename scheme later. */
@@ -96,7 +124,7 @@ class WrongAnswerActivity : AppCompatActivity() {
 
 
                 Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
-            } catch (exception : Exception) {
+            } catch (exception: Exception) {
                 Toast.makeText(this, "Failed to save.", Toast.LENGTH_SHORT).show()
             }
         } else {
@@ -120,27 +148,9 @@ class WrongAnswerActivity : AppCompatActivity() {
                     outputStream.close()
                 }.start()
                 Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
-            } catch (exception : Exception) {
+            } catch (exception: Exception) {
                 Toast.makeText(this, "Failed to save.", Toast.LENGTH_SHORT).show()
             }
-
-        }
-
-        tryAgainButton.setOnClickListener {
-            finish()
-            editor.putInt("currentStreak", 0)
-            editor.apply()
-            val i = Intent(this, QuestionActivity::class.java)
-            startActivity(i)
-            //Also add code to reset streak
-        }
-        stopButton.setOnClickListener {
-            finish()
-            editor.putInt("currentStreak", 0)
-            editor.apply()
-            //Add code to reset streak
-            val i = Intent(this, MainActivity::class.java )
-            startActivity(i)
 
         }
     }
