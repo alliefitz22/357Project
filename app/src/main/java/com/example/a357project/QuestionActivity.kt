@@ -17,7 +17,7 @@ import java.util.*
 
 
 class QuestionActivity : AppCompatActivity() {
-
+    var backPressed: Boolean = false
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,34 +62,63 @@ class QuestionActivity : AppCompatActivity() {
                 while (progressStatus < 100) {
                     try {
                         counter = counter+1
+                        Thread.sleep(200)
+                    } catch (e: InterruptedException) {
+                        e.printStackTrace()
+                    }
+                    progressStatus = counter
+                    progressBar.progress = progressStatus
+                    if(aIsClicked || bIsClicked || cIsClicked || dIsClicked || backPressed) {
+                        break
+                    }
+                }
+                if(progressBar.progress == progressBar.max){
+                    val i = Intent(this, WrongAnswerActivity::class.java)
+                    startActivity(i)
+                }
+            }).start()
+        }
+        if(difficulty == "Medium"){
+            Thread(Runnable {
+                while (progressStatus < 100) {
+                    try {
+                        counter = counter+1
                         Thread.sleep(100)
                     } catch (e: InterruptedException) {
                         e.printStackTrace()
                     }
                     progressStatus = counter
                     progressBar.progress = progressStatus
-                    if(aIsClicked || bIsClicked || cIsClicked || dIsClicked){
+                    if(aIsClicked || bIsClicked || cIsClicked || dIsClicked || backPressed) {
                         break
                     }
                 }
-
                 if(progressBar.progress == progressBar.max){
                     val i = Intent(this, WrongAnswerActivity::class.java)
                     startActivity(i)
                 }
-
             }).start()
-
-        }
-        if(difficulty == "Medium"){
-            ObjectAnimator.ofInt(progressBar, "progress", progressStatus)
-                .setDuration(10000)
-                .start()
         }
         if(difficulty == "Hard"){
-            ObjectAnimator.ofInt(progressBar, "progress", progressStatus)
-                .setDuration(5000)
-                .start()
+            Thread(Runnable {
+                while (progressStatus < 100) {
+                    try {
+                        counter = counter+1
+                        Thread.sleep(50)
+                    } catch (e: InterruptedException) {
+                        e.printStackTrace()
+                    }
+                    progressStatus = counter
+                    progressBar.progress = progressStatus
+                    if(aIsClicked || bIsClicked || cIsClicked || dIsClicked || backPressed) {
+                        break
+                    }
+                }
+                if(progressBar.progress == progressBar.max){
+                    val i = Intent(this, WrongAnswerActivity::class.java)
+                    startActivity(i)
+                }
+            }).start()
         }
 
 
@@ -238,5 +267,9 @@ class QuestionActivity : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        backPressed = true
+    }
 
 }

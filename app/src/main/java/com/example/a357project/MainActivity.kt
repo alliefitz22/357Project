@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
 
 
         playButton.setOnClickListener {
-            finish()
             val i = Intent(this, QuestionActivity::class.java)
             startActivity(i)
         }
