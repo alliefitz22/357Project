@@ -1,5 +1,6 @@
 package com.example.a357project
 
+import android.content.ContentResolver
 import android.content.ContentValues
 import android.content.Intent
 import android.content.SharedPreferences
@@ -13,6 +14,7 @@ import android.provider.MediaStore
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.net.toUri
 import java.io.File
 import java.io.FileOutputStream
 import java.util.*
@@ -35,7 +37,7 @@ class WrongAnswerActivity : AppCompatActivity() {
         longestStreak.text = "Lonqest Streak: $longestStreakSaved questions"
 
         saveScoreButton.setOnClickListener {
-            generateImage(finalStreakSaved, longestStreakSaved, sPref)
+            generateImage(finalStreakSaved, longestStreakSaved, sPref, editor)
         }
 
         tryAgainButton.setOnClickListener {
@@ -57,7 +59,8 @@ class WrongAnswerActivity : AppCompatActivity() {
         }
     }
 
-    private fun generateImage(finalStreakSaved: Int, longestStreakSaved: Int, sPref: SharedPreferences) {
+    private fun generateImage(finalStreakSaved: Int, longestStreakSaved: Int, sPref: SharedPreferences,
+        editor: SharedPreferences.Editor) {
         /* Image generation code sourced from StackOverflow thread here:
            https://stackoverflow.com/questions/9124896/generate-a-image-with-custom-text-in-android
          */
@@ -68,6 +71,8 @@ class WrongAnswerActivity : AppCompatActivity() {
         val year = cal.get(Calendar.YEAR)
         val month = cal.get(Calendar.MONTH)
         val day = cal.get(Calendar.DAY_OF_MONTH)
+        val hour = cal.get(Calendar.HOUR_OF_DAY)
+        val minute = cal.get(Calendar.MINUTE)
         val second = cal.get(Calendar.SECOND)
         val diff = sPref.getString("diffValue", "Easy")
         val imgHeader = "Stats for today, $year-$month-$day:"
@@ -99,8 +104,8 @@ class WrongAnswerActivity : AppCompatActivity() {
             try {
                 val resolver = contentResolver
                 val values = ContentValues()
-                /* Perhaps come up with a better filename scheme later. */
-                values.put(MediaStore.MediaColumns.DISPLAY_NAME, "Image_$year$month$day$second.jpg")
+                values.put(MediaStore.MediaColumns.DISPLAY_NAME, "TriviaStats_$year$month$day" +
+                        "_" + "$hour$minute$second.jpg")
                 values.put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
                 values.put(
                     MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES +
@@ -121,6 +126,10 @@ class WrongAnswerActivity : AppCompatActivity() {
                     outputStream?.close()
                 }.start()
                 Objects.requireNonNull(outputStream)
+                /* This is definitely not how this is supposed to work, but I'm unsure why I
+                   can't get the full path to write so I'm just concatenating this on myself. */
+                editor.putString("recentURI", "content://media/" + uri?.path.toString())
+                editor.apply()
 
 
                 Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
@@ -133,7 +142,8 @@ class WrongAnswerActivity : AppCompatActivity() {
                 .toString() + "/357Project"
             val directory = File(root)
             directory.mkdirs()
-            val file = File(directory, "Image_$year$month$day$second.jpg")
+            val file = File(directory, "TriviaStats_$year$month$day" +
+                    "_" + "$hour$minute$second.jpg")
             /* Possibly unnecessary? Not sure if this method auto-renames files for redundancy
                so I left it in here. */
             if (file.exists()) {
@@ -143,6 +153,9 @@ class WrongAnswerActivity : AppCompatActivity() {
                 val outputStream = FileOutputStream(file)
                 Thread {
                     saved.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+                    val path = MediaStore.Images.Media.insertImage(this.contentResolver, file.path, file.name, null)
+                    editor.putString("recentURI", path.toString())
+                    editor.apply()
                     /* Again, make sure this remains in the thread or things get ugly. */
                     outputStream.flush()
                     outputStream.close()
