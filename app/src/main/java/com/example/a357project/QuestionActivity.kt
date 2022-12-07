@@ -1,18 +1,25 @@
 package com.example.a357project
 
+import android.animation.AnimatorListenerAdapter
+import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import java.io.BufferedReader
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import java.util.*
+
 
 class QuestionActivity : AppCompatActivity() {
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
@@ -36,9 +43,55 @@ class QuestionActivity : AppCompatActivity() {
 
         val questionLabel = findViewById<TextView>(R.id.question)
         val answerAButton = findViewById<Button>(R.id.answerA)
+        var aIsClicked: Boolean = false
         val answerBButton = findViewById<Button>(R.id.answerB)
+        var bIsClicked: Boolean = false
         val answerCButton = findViewById<Button>(R.id.answerC)
+        var cIsClicked: Boolean = false
         val answerDButton = findViewById<Button>(R.id.answerD)
+        var dIsClicked: Boolean = false
+        val progressBar = findViewById<ProgressBar>(R.id.progressBar) as ProgressBar
+        var progressStatus = 0
+        var difficulty: String = "Easy"
+        var counter = 0
+
+
+        if(difficulty == "Easy") {
+            Thread(Runnable {
+                while (progressStatus < 100) {
+                    try {
+                        counter = counter+1
+                        Thread.sleep(100)
+                    } catch (e: InterruptedException) {
+                        e.printStackTrace()
+                    }
+                    progressStatus = counter
+                    progressBar.progress = progressStatus
+                    if(aIsClicked || bIsClicked || cIsClicked || dIsClicked){
+                        break
+                    }
+                }
+
+                if(progressBar.progress == progressBar.max){
+                    val i = Intent(this, WrongAnswerActivity::class.java)
+                    startActivity(i)
+                }
+
+            }).start()
+
+        }
+        if(difficulty == "Medium"){
+            ObjectAnimator.ofInt(progressBar, "progress", progressStatus)
+                .setDuration(10000)
+                .start()
+        }
+        if(difficulty == "Hard"){
+            ObjectAnimator.ofInt(progressBar, "progress", progressStatus)
+                .setDuration(5000)
+                .start()
+        }
+
+
 
         var currentQuestion = Random().nextInt(1998) + 10000
 
@@ -110,6 +163,7 @@ class QuestionActivity : AppCompatActivity() {
         var currentStreak = sPref.getInt("currentStreak", 0)
 
         answerAButton.setOnClickListener{
+            aIsClicked = true
             finish()
             if(correctAnswer == "A" ){
                 //updating the current streak
@@ -126,6 +180,7 @@ class QuestionActivity : AppCompatActivity() {
         }
 
         answerBButton.setOnClickListener{
+            bIsClicked = true
             finish()
             if(correctAnswer == "B" ){
                 currentStreak += 1
@@ -142,6 +197,7 @@ class QuestionActivity : AppCompatActivity() {
         }
 
         answerCButton.setOnClickListener{
+            cIsClicked = true
             finish()
             if(correctAnswer == "C" ){
                 currentStreak += 1
@@ -157,6 +213,7 @@ class QuestionActivity : AppCompatActivity() {
         }
 
         answerDButton.setOnClickListener{
+            dIsClicked = true
             finish()
             if(correctAnswer == "D" ){
                 currentStreak += 1
@@ -173,5 +230,6 @@ class QuestionActivity : AppCompatActivity() {
         }
 
     }
+
 
 }
