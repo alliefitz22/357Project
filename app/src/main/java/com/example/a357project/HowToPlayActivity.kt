@@ -15,9 +15,9 @@ class HowToPlayActivity : AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.nextButton)
 
         nextButton.setOnClickListener{
-            finish()
             val i = Intent(this, HowToPlay2Activity::class.java)
             startActivity(i)
+            finish()
         }
     }
 }

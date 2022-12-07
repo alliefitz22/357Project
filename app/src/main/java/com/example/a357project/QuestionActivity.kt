@@ -41,6 +41,7 @@ class QuestionActivity : AppCompatActivity() {
             used = reader.readLines().toTypedArray()
         }
 
+        val categoryLabel = findViewById<TextView>(R.id.category)
         val questionLabel = findViewById<TextView>(R.id.question)
         val answerAButton = findViewById<Button>(R.id.answerA)
         var aIsClicked: Boolean = false
@@ -157,9 +158,15 @@ class QuestionActivity : AppCompatActivity() {
         answerCButton.text = currC
         answerDButton.text = currD
 
+        val currentCategory = "Category_$currentQuestion"
+        val currentCategoryStr: String = getString(applicationContext.resources.getIdentifier(
+            currentCategory, "string", packageName))
+        categoryLabel.text = currentCategoryStr
+
         val correctAnswerString = "Answer_$currentQuestion"
         val correctAnswer: String = getString(applicationContext.resources.getIdentifier(
             correctAnswerString, "string", packageName))
+
         var currentStreak = sPref.getInt("currentStreak", 0)
 
         answerAButton.setOnClickListener{

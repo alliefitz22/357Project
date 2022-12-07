@@ -23,8 +23,6 @@ class StatsActivity : AppCompatActivity() {
 
         statHomeButton.setOnClickListener {
             finish()
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
         }
     }
 

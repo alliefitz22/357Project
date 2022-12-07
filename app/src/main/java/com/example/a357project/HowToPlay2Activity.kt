@@ -13,12 +13,18 @@ class HowToPlay2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_how_to_play2)
 
         val homeButton = findViewById<Button>(R.id.h2pHome)
+        val backButton = findViewById<Button>(R.id.h2pBackButton)
 
         homeButton.setOnClickListener{
             finish()
-            val i = Intent(this, MainActivity::class.java)
+        }
+
+        backButton.setOnClickListener{
+            finish()
+            val i = Intent(this, HowToPlayActivity::class.java)
             startActivity(i)
         }
+
 
     }
 }
