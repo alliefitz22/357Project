@@ -200,7 +200,6 @@ class QuestionActivity : AppCompatActivity() {
 
         answerAButton.setOnClickListener{
             aIsClicked = true
-            finish()
             if(correctAnswer == "A" ){
                 //updating the current streak
                 currentStreak += 1
@@ -213,11 +212,11 @@ class QuestionActivity : AppCompatActivity() {
                 val i = Intent(this, WrongAnswerActivity::class.java)
                 startActivity(i)
             }
+            finish()
         }
 
         answerBButton.setOnClickListener{
             bIsClicked = true
-            finish()
             if(correctAnswer == "B" ){
                 currentStreak += 1
                 editor.putInt("currentStreak", currentStreak)
@@ -229,12 +228,12 @@ class QuestionActivity : AppCompatActivity() {
                 val i = Intent(this, WrongAnswerActivity::class.java)
                 startActivity(i)
             }
+            finish()
 
         }
 
         answerCButton.setOnClickListener{
             cIsClicked = true
-            finish()
             if(correctAnswer == "C" ){
                 currentStreak += 1
                 editor.putInt("currentStreak", currentStreak)
@@ -246,11 +245,11 @@ class QuestionActivity : AppCompatActivity() {
                 val i = Intent(this, WrongAnswerActivity::class.java)
                 startActivity(i)
             }
+            finish()
         }
 
         answerDButton.setOnClickListener{
             dIsClicked = true
-            finish()
             if(correctAnswer == "D" ){
                 currentStreak += 1
                 editor.putInt("currentStreak", currentStreak)
@@ -262,6 +261,7 @@ class QuestionActivity : AppCompatActivity() {
                 val i = Intent(this, WrongAnswerActivity::class.java)
                 startActivity(i)
             }
+            finish()
 
         }
 

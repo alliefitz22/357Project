@@ -6,6 +6,8 @@ import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -22,7 +24,10 @@ class MainActivity : AppCompatActivity() {
             editor.putInt("maxStreak", 0)
             editor.apply()
         }
-
+        if (!(sPref.contains("diffValue"))){
+            editor.putString("diffValue", "Easy")
+            editor.apply()
+        }
 
 
 
@@ -57,5 +62,18 @@ class MainActivity : AppCompatActivity() {
                     0)
             }
         }
+    }
+    override fun onCreateOptionsMenu(menu: Menu?):Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.settings_action) {
+            val intent = Intent(this@MainActivity, SettingsActivity::class.java)
+            startActivity(intent)
+            return true
+        }
+        return false
     }
 }

@@ -2,6 +2,13 @@
 
     <string name="app_name">357Project</string>
 
+
+    <string-array name ="difficultyArray">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
     <string name="Category_10000">Lifestyle</string>
     <string name="Question_10000">In which building does the President of the United States live?</string>
     <string name="A_10000">Red House</string>
@@ -15993,6 +16000,8 @@
     <string name="C_11998">K</string>
     <string name="D_11998">S</string>
     <string name="Answer_11998">C</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- Strings used for fragments for navigation -->
 
     <string name="SaveScore">Save Score</string>
 

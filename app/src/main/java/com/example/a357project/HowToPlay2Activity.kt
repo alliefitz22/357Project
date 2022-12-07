@@ -20,9 +20,9 @@ class HowToPlay2Activity : AppCompatActivity() {
         }
 
         backButton.setOnClickListener{
-            finish()
             val i = Intent(this, HowToPlayActivity::class.java)
             startActivity(i)
+            finish()
         }
 
 

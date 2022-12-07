@@ -35,26 +35,23 @@ class WrongAnswerActivity : AppCompatActivity() {
         val longestStreakSaved = sPref.getInt("maxStreak", 0)
         finalStreak.text = "Final Streak: $finalStreakSaved questions"
         longestStreak.text = "Lonqest Streak: $longestStreakSaved questions"
+        editor.putInt("currentStreak", 0)
+        editor.apply()
 
         saveScoreButton.setOnClickListener {
             generateImage(finalStreakSaved, longestStreakSaved, sPref, editor)
         }
 
         tryAgainButton.setOnClickListener {
-            finish()
-            editor.putInt("currentStreak", 0)
-            editor.apply()
             val i = Intent(this, QuestionActivity::class.java)
             startActivity(i)
-            //Also add code to reset streak
+            finish()
         }
         stopButton.setOnClickListener {
-            finish()
-            editor.putInt("currentStreak", 0)
-            editor.apply()
-            //Add code to reset streak
+
             val i = Intent(this, MainActivity::class.java )
             startActivity(i)
+            finish()
 
         }
     }
