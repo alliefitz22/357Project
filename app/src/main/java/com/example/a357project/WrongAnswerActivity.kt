@@ -34,10 +34,10 @@ class WrongAnswerActivity : AppCompatActivity() {
         val finalStreakSaved = sPref.getInt("currentStreak", 0)
         val longestStreakSaved = sPref.getInt("maxStreak", 0)
 
-        title = "Question " + (finalStreakSaved + 1)
+        title = getString(R.string.Question) + (finalStreakSaved + 1)
 
-        finalStreak.text = "Final Streak: $finalStreakSaved questions"
-        longestStreak.text = "Lonqest Streak: $longestStreakSaved questions"
+        finalStreak.text = getString(R.string.Final_Streak) + finalStreakSaved
+        longestStreak.text = getString(R.string.Longest_Streak) + " " + longestStreakSaved
         editor.putInt("currentStreak", 0)
         editor.apply()
 
@@ -132,9 +132,9 @@ class WrongAnswerActivity : AppCompatActivity() {
                 editor.apply()
 
 
-                Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Saved), Toast.LENGTH_SHORT).show()
             } catch (exception: Exception) {
-                Toast.makeText(this, "Failed to save.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Failed_To_Save), Toast.LENGTH_SHORT).show()
             }
         } else {
             /* Alternative method for older APIs. */
@@ -160,9 +160,9 @@ class WrongAnswerActivity : AppCompatActivity() {
                     outputStream.flush()
                     outputStream.close()
                 }.start()
-                Toast.makeText(this, "Saved.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Saved), Toast.LENGTH_SHORT).show()
             } catch (exception: Exception) {
-                Toast.makeText(this, "Failed to save.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Failed_To_Save), Toast.LENGTH_SHORT).show()
             }
 
         }

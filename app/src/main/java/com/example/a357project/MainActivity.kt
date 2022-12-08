@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        title = "Menu"
+        title = getString(R.string.Menu)
         val sPref = applicationContext.getSharedPreferences("MyPref", 0)
         val editor: SharedPreferences.Editor = sPref.edit()
         if (!(sPref.contains("currentStreak"))){

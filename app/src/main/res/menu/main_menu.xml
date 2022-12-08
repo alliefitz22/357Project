@@ -4,10 +4,10 @@
 
     <item
         android:id="@+id/HTP_action"
-        android:title="How To Play"
+        android:title="@string/How_To_Play"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/settings_action"
-        android:title="Settings"
+        android:title="@string/Settings"
         app:showAsAction="ifRoom" />
 </menu>

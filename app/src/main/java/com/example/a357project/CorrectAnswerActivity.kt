@@ -20,16 +20,16 @@ class CorrectAnswerActivity : AppCompatActivity() {
 
         val currentStreakSaved = sPref.getInt("currentStreak", 0)
 
-        title = "Question $currentStreakSaved"
+        title = getString(R.string.Question) + currentStreakSaved
 
-        currentStreak.text = "Current Streak: $currentStreakSaved questions"
+        currentStreak.text = getString(R.string.Current_Streak) + " " + currentStreakSaved
         var longestStreakSaved = sPref.getInt("maxStreak", 0)
         if (currentStreakSaved > longestStreakSaved) {
             longestStreakSaved = currentStreakSaved
             editor.putInt("maxStreak", longestStreakSaved)
             editor.apply()
         }
-        longestStreak.text = "Longest Streak: $longestStreakSaved questions"
+        longestStreak.text = getString(R.string.Longest_Streak) + " " + longestStreakSaved
 
         continueButton.setOnClickListener {
             val i = Intent(this, QuestionActivity::class.java )

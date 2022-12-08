@@ -18,7 +18,7 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
         //setSupportActionBar(findViewById(R.id.toolbar))
-        title = "Settings"
+        title = getString(R.string.Settings)
         val sPref = applicationContext.getSharedPreferences("MyPref", 0)
         val editor: SharedPreferences.Editor = sPref.edit()
 

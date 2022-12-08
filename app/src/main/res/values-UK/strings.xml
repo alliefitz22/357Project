@@ -15995,4 +15995,26 @@
 <string name="Answer_11998">A</string>
 
 <string name="SaveScore">Save Score</string>
+    <string name="Play">Play</string>
+    <string name="Stats">Stats</string>
+    <string name="Next_Question">Next Question</string>
+    <string name="Stop">Stop</string>
+    <string name="Correct">Correct</string>
+    <string name="Current_Streak">Current Streak</string>
+    <string name="Longest_Streak">Longest Streak:</string>
+    <string name="Incorrect">Incorrect</string>
+    <string name="Try_Again">Try Again</string>
+    <string name="Final_Streak">"Final Streak: "</string>
+    <string name="Category">Category</string>
+    <string name="Time">Time:</string>
+    <string name="View_Saved">View Saved Stats</string>
+    <string name="Back">Back</string>
+    <string name="Choose_Diff">Choose Your Difficulty</string>
+    <string name="Menu">Menu</string>
+    <string name="Settings">Settings</string>
+    <string name="How_To_Play">How To Play</string>
+    <string name="Question">"Question "</string>
+    <string name="Saved">Saved</string>
+    <string name="Failed_To_Save">Failed to save</string>
+    <string name="Save_Not_Found">Save not found.</string>
 </resources>

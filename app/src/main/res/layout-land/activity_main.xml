@@ -12,7 +12,7 @@
         android:layout_width="88dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Play"
+        android:text="@string/Play"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline6" />
@@ -22,7 +22,7 @@
         android:layout_width="88dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Stats"
+        android:text="@string/Stats"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />

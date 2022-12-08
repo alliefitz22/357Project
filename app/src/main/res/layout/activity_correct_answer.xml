@@ -14,7 +14,7 @@
         android:layout_marginStart="128dp"
         android:layout_marginEnd="129dp"
         android:layout_marginBottom="5dp"
-        android:text="Next Question"
+        android:text="@string/Next_Question"
         app:layout_constraintBottom_toTopOf="@+id/cHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -26,7 +26,7 @@
         android:layout_marginStart="118dp"
         android:layout_marginEnd="118dp"
         android:layout_marginBottom="256dp"
-        android:text="I'm done for now"
+        android:text="@string/Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,7 +51,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="181dp"
         android:layout_marginBottom="52dp"
-        android:text="Correct!"
+        android:text="@string/Correct"
         android:textColor="#4CBB17"
         app:layout_constraintBottom_toTopOf="@+id/nextQ"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="10dp"
-        android:text="Current Streak:"
+        android:text="@string/Current_Streak"
         android:textColor="#4CBB17"
         app:layout_constraintBottom_toTopOf="@+id/cLongestStreak"
         app:layout_constraintStart_toStartOf="parent" />
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="168dp"
-        android:text="Longest Streak:"
+        android:text="@string/Longest_Streak"
         android:textColor="#4CBB17"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

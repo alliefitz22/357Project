@@ -1,18 +1,17 @@
 package com.example.a357project
 
 import android.annotation.SuppressLint
-import android.content.ContentValues
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Environment
-import android.provider.MediaStore
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
-import java.io.File
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.documentfile.provider.DocumentFile
+
 
 class StatsActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -36,10 +35,15 @@ class StatsActivity : AppCompatActivity() {
 
         shareButton.setOnClickListener {
             val uri = sPref.getString("recentURI", "none")
-            if (uri != "none") {
+            val sourceFile = DocumentFile.fromSingleUri(this, Uri.parse(uri))
+            val exists = sourceFile!!.exists()
+
+            if (uri != "none" && exists) {
                 val i = Intent(Intent.ACTION_VIEW)
                 i.data = Uri.parse(uri)
                 startActivity(i)
+            } else {
+                Toast.makeText(this, "Save not found.", Toast.LENGTH_SHORT).show()
             }
         }
     }
