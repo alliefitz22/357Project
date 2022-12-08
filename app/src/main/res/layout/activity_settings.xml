@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.357Project"
+    android:background="#3A3939"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <Spinner
         android:id="@+id/diffSpinner"
         android:layout_width="232dp"
         android:layout_height="88dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="83dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Make Selection"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diffLabel" />
 
@@ -23,9 +22,8 @@
         android:id="@+id/diffLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="155dp"
+        android:layout_marginTop="64dp"
+        android:textColor="#4CBB17"
         android:text="Set the difficulty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
