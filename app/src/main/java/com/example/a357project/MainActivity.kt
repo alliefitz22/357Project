@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
             editor.putInt("maxStreak", 0)
             editor.apply()
         }
-        if (!(sPref.contains("diffValue"))){
-            editor.putString("diffValue", "Easy")
+        if (!(sPref.contains("currentDifficulty"))){
+            editor.putInt("currentDifficulty", 0)
             editor.apply()
         }
 

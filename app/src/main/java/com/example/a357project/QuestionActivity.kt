@@ -54,11 +54,11 @@ class QuestionActivity : AppCompatActivity() {
         var dIsClicked: Boolean = false
         val progressBar = findViewById<ProgressBar>(R.id.progressBar) as ProgressBar
         var progressStatus = 0
-        var difficulty: String? = sPref.getString("diffValue", "Easy")
+        var difficulty: Int = sPref.getInt("currentDifficulty", 0)
         var counter = 0
 
 
-        if(difficulty == "Easy") {
+        if(difficulty == 0) {
             Thread(Runnable {
                 while (progressStatus < 100) {
                     try {
@@ -79,7 +79,7 @@ class QuestionActivity : AppCompatActivity() {
                 }
             }).start()
         }
-        if(difficulty == "Medium"){
+        if(difficulty == 1){
             Thread(Runnable {
                 while (progressStatus < 100) {
                     try {
@@ -100,7 +100,7 @@ class QuestionActivity : AppCompatActivity() {
                 }
             }).start()
         }
-        if(difficulty == "Hard"){
+        if(difficulty == 2){
             Thread(Runnable {
                 while (progressStatus < 100) {
                     try {

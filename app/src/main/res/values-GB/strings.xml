@@ -16022,4 +16022,7 @@
     <string name="Hard">Hard</string>
     <string name="Next">Next</string>
     <string name="Home">Home</string>
+    <string name="Difficulty">Difficulty:</string>
+    <string name="Today_Streak">Today\'s Streak:</string>
+    <string name="Stats_For_Today">Stats For</string>
 </resources>

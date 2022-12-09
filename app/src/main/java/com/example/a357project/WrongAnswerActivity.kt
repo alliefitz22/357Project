@@ -74,11 +74,19 @@ class WrongAnswerActivity : AppCompatActivity() {
         val hour = cal.get(Calendar.HOUR_OF_DAY)
         val minute = cal.get(Calendar.MINUTE)
         val second = cal.get(Calendar.SECOND)
-        val diff = sPref.getString("diffValue", "Easy")
-        val imgHeader = "Stats for today, $year-$month-$day:"
-        val streakText = "Today's Streak: $finalStreakSaved"
-        val bestText = "High Score: $longestStreakSaved"
-        val timerOn = "Difficulty: $diff"
+        val diffNum = sPref.getInt("currentDifficulty", 0)
+        val diff : String
+        if (diffNum == 1) {
+            diff = getString(R.string.Medium)
+        } else if (diffNum == 2) {
+            diff = getString(R.string.Hard)
+        } else {
+            diff = getString(R.string.Easy)
+        }
+        val imgHeader =  getString(R.string.Stats_For_Today) + " $year-$month-$day:"
+        val streakText = getString(R.string.Today_Streak) + " " + finalStreakSaved
+        val bestText =  getString(R.string.Longest_Streak) + " " + longestStreakSaved
+        val timerOn = getString(R.string.Difficulty) + " " + diff
 
 
         var canvas = Canvas(saved)

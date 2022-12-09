@@ -16022,5 +16022,8 @@
     <string name="Hard">Dur</string>
     <string name="Next">Prochain</string>
     <string name="Home">Maison</string>
+    <string name="Difficulty">Difficulté:</string>
+    <string name="Today_Streak">Bilan Du Jour:</string>
+    <string name="Stats_For_Today">Statistiques Pour</string>
 
 </resources>

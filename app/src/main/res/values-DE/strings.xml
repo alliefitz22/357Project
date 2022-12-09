@@ -16022,6 +16022,9 @@
     <string name="Hard">Schwer</string>
     <string name="Next">Nächste</string>
     <string name="Home">Heim</string>
+    <string name="Difficulty">Schwierigkeit:</string>
+    <string name="Today_Streak">Der Heutige Spielstand:</string>
+    <string name="Stats_For_Today">Statistiken Für</string>
 
 
 </resources>
