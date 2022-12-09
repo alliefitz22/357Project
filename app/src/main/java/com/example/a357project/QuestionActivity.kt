@@ -191,7 +191,7 @@ class QuestionActivity : AppCompatActivity() {
         val currentCategory = "Category_$currentQuestion"
         val currentCategoryStr: String = getString(applicationContext.resources.getIdentifier(
             currentCategory, "string", packageName))
-        categoryLabel.text = "Category: $currentCategoryStr"
+        categoryLabel.text = getString(R.string.Category) + ": " + currentCategoryStr
 
         val correctAnswerString = "Answer_$currentQuestion"
         val correctAnswer: String = getString(applicationContext.resources.getIdentifier(
