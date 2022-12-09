@@ -163,6 +163,7 @@ class WrongAnswerActivity : AppCompatActivity() {
                     saved.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
                     val path = MediaStore.Images.Media.insertImage(this.contentResolver, file.path, file.name, null)
                     editor.putString("recentURI", path.toString())
+                    editor.putString("recentPath", file.path.toString())
                     editor.apply()
                     /* Again, make sure this remains in the thread or things get ugly. */
                     outputStream.flush()

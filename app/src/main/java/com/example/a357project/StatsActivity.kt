@@ -3,6 +3,7 @@ package com.example.a357project
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -11,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.documentfile.provider.DocumentFile
+import java.io.File
 
 
 class StatsActivity : AppCompatActivity() {
@@ -34,16 +36,39 @@ class StatsActivity : AppCompatActivity() {
         }
 
         shareButton.setOnClickListener {
-            val uri = sPref.getString("recentURI", "none")
-            val sourceFile = DocumentFile.fromSingleUri(this, Uri.parse(uri))
-            val exists = sourceFile!!.exists()
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                val uri = sPref.getString("recentURI", "none")
+                val sourceFile = DocumentFile.fromSingleUri(this, Uri.parse(uri))
 
-            if (uri != "none" && exists) {
-                val i = Intent(Intent.ACTION_VIEW)
-                i.data = Uri.parse(uri)
-                startActivity(i)
+                val exists = sourceFile!!.exists()
+
+                if (uri != "none" && exists) {
+                    val i = Intent(Intent.ACTION_VIEW)
+                    i.data = Uri.parse(uri)
+                    startActivity(i)
+                } else {
+                    Toast.makeText(this, getString(R.string.Save_Not_Found), Toast.LENGTH_SHORT)
+                        .show()
+                }
             } else {
-                Toast.makeText(this, getString(R.string.Save_Not_Found), Toast.LENGTH_SHORT).show()
+                try {
+                    val path = sPref.getString("recentPath", "none")
+                    val sourceFile = DocumentFile.fromFile(File(path))
+                    val uri = sPref.getString("recentURI", "none")
+
+                    val exists = sourceFile!!.exists()
+
+                    if (uri != "none" && exists) {
+                        val i = Intent(Intent.ACTION_VIEW)
+                        i.data = Uri.parse(uri)
+                        startActivity(i)
+                    } else {
+                        Toast.makeText(this, getString(R.string.Save_Not_Found), Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                } catch (exception : Exception) {
+                    Toast.makeText(this, "Save not found.", Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
