@@ -16025,5 +16025,12 @@
     <string name="Difficulty">Difficulté:</string>
     <string name="Today_Streak">Bilan Du Jour:</string>
     <string name="Stats_For_Today">Statistiques Pour</string>
+    <string name="Rules_1">Les règles sont très simples.</string>
+    <string name="Rules_2">Chaque question a quatre réponses possibles.</string>
+    <string name="Rules_3">Attention à ne pas manquer de temps! Plus la difficulté est élevée, moins vous avez de temps!</string>
+    <string name="Rules_4">Avez-vous bien répondu? Vous pouvez vous arrêter là ou passer à la question suivante.</string>
+    <string name="Rules_5">Sinon, le jeu est terminé. Si vous avez obtenu de bons résultats, enregistrez vos résultats et partagez-les avec vos amis!</string>
+    <string name="Rules_6">Bonne chance!</string>
+    <string name="Rules_X">Le but est d\'obtenir la plus longue séquence possible.</string>
 
 </resources>

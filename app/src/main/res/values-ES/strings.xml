@@ -16025,5 +16025,12 @@
     <string name="Difficulty">Dificultad:</string>
     <string name="Today_Streak">Puntaje De Hoy:</string>
     <string name="Stats_For_Today">Estadísticas Para</string>
+    <string name="Rules_1">Las reglas son muy simples.</string>
+    <string name="Rules_2">Cada pregunta tiene cuatro posibles respuestas.</string>
+    <string name="Rules_3">¡Ten cuidado de no quedarte sin tiempo! Cuanto mayor sea la dificultad, menos tiempo tienes!</string>
+    <string name="Rules_4">¿Respondiste correctamente? Puede detenerse allí o pasar a la siguiente pregunta.</string>
+    <string name="Rules_5">Si no, el juego ha terminado. Si obtuviste una buena puntuación, ¡guarda tus resultados y compártelos con tus amigos!</string>
+    <string name="Rules_6">¡Buena suerte!</string>
+    <string name="Rules_X">El objetivo es conseguir la racha más larga posible.</string>
 
 </resources>

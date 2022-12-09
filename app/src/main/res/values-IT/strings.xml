@@ -16025,5 +16025,12 @@
     <string name="Difficulty">Difficoltà:</string>
     <string name="Today_Streak">Punteggio Di Oggi:</string>
     <string name="Stats_For_Today">Statistiche Per</string>
+    <string name="Rules_1">Le regole sono molto semplici.</string>
+    <string name="Rules_2">Ogni domanda ha quattro possibili risposte.</string>
+    <string name="Rules_3">Fai attenzione a non rimanere senza tempo! Più alta è la difficoltà, meno tempo hai!</string>
+    <string name="Rules_4">Hai risposto correttamente? Puoi fermarti qui o passare alla domanda successiva.</string>
+    <string name="Rules_5">In caso contrario, il gioco è finito. Se hai segnato bene, salva i tuoi risultati e condividili con gli amici!</string>
+    <string name="Rules_6">Buona fortuna!</string>
+    <string name="Rules_X">L\'obiettivo è quello di ottenere la serie più lunga possibile.</string>
 
 </resources>

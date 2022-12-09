@@ -16025,6 +16025,13 @@
     <string name="Difficulty">Schwierigkeit:</string>
     <string name="Today_Streak">Der Heutige Spielstand:</string>
     <string name="Stats_For_Today">Statistiken Für</string>
+    <string name="Rules_1">Die Regeln sind sehr einfach.</string>
+    <string name="Rules_2">Chaque question a quatre réponses possibles.</string>
+    <string name="Rules_3">Pass auf, dass dir die Zeit nicht davonläuft! Je höher der Schwierigkeitsgrad, desto weniger Zeit haben Sie!</string>
+    <string name="Rules_4">Hast du richtig geantwortet? Sie können dort aufhören oder mit der nächsten Frage fortfahren.</string>
+    <string name="Rules_5">Wenn nicht, ist das Spiel vorbei. Wenn Sie gut abgeschnitten haben, speichern Sie Ihre Ergebnisse und teilen Sie sie mit Freunden!</string>
+    <string name="Rules_6">Viel Glück!</string>
+    <string name="Rules_X">Das Ziel ist es, einen möglichst langen Streak zu erzielen.</string>
 
 
 </resources>

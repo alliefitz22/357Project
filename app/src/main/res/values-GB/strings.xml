@@ -16025,4 +16025,11 @@
     <string name="Difficulty">Difficulty:</string>
     <string name="Today_Streak">Today\'s Streak:</string>
     <string name="Stats_For_Today">Stats For</string>
+    <string name="Rules_1">The rules are very simple.</string>
+    <string name="Rules_2">Each question has four possible answers.</string>
+    <string name="Rules_3">Be careful not to run out of time! The higher the difficulty, the less time you have!</string>
+    <string name="Rules_4">Did you answer correctly? You can stop there or move on to the next question.</string>
+    <string name="Rules_5">If not, the game is over. If you scored well, save your results and share them with friends!</string>
+    <string name="Rules_6">Good luck!</string>
+    <string name="Rules_X">The goal is to get the longest streak of correct answers possible.</string>
 </resources>
