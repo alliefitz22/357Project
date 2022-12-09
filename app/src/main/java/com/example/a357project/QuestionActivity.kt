@@ -40,6 +40,7 @@ class QuestionActivity : AppCompatActivity() {
         } else {
             val reader: BufferedReader = applicationContext.openFileInput("used").bufferedReader()
             used = reader.readLines().toTypedArray()
+            reader.close()
         }
 
         val categoryLabel = findViewById<TextView>(R.id.category)
