@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="503dp"
-        android:layout_height="88dp"
+        android:layout_width="474dp"
+        android:layout_height="80dp"
         android:layout_marginTop="8dp"
         android:text="@string/Rules_1"
         android:textAlignment="center"
@@ -23,8 +23,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="516dp"
-        android:layout_height="91dp"
+        android:layout_width="465dp"
+        android:layout_height="86dp"
         android:text="@string/Rules_2"
         android:textAlignment="center"
         android:textColor="@color/kelly_green"
@@ -47,8 +47,8 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="508dp"
-        android:layout_height="142dp"
+        android:layout_width="463dp"
+        android:layout_height="143dp"
         android:text="@string/Rules_3"
         android:textAlignment="center"
         android:textColor="@color/kelly_green"
