@@ -133,7 +133,6 @@ class WrongAnswerActivity : AppCompatActivity() {
                     outputStream?.flush()
                     outputStream?.close()
                 }.start()
-                Objects.requireNonNull(outputStream)
                 /* This is definitely not how this is supposed to work, but I'm unsure why I
                    can't get the full path to write so I'm just concatenating this on myself. */
                 editor.putString("recentURI", "content://media/" + uri?.path.toString())
