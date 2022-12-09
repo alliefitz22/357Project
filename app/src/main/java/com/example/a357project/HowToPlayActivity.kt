@@ -12,7 +12,7 @@ class HowToPlayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_how_to_play)
 
-        title = "How to Play"
+        title = getString(R.string.How_To_Play)
 
         val nextButton = findViewById<Button>(R.id.nextButton)
 

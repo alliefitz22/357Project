@@ -16017,6 +16017,11 @@
     <string name="Saved">Gespeicherte.</string>
     <string name="Failed_To_Save">Speichern fehlgeschlagen.</string>
     <string name="Save_Not_Found">Speichern nicht gefunden.</string>
+    <string name="Easy">Einfach</string>
+    <string name="Medium">Mittel</string>
+    <string name="Hard">Schwer</string>
+    <string name="Next">Nächste</string>
+    <string name="Home">Heim</string>
 
 
 </resources>

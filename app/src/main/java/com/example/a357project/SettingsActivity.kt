@@ -31,6 +31,7 @@ class SettingsActivity : AppCompatActivity() {
             startActivity(i)*/
             finish()
         }
+
         val diffSpinner = findViewById<Spinner>(R.id.diffSpinner)
         val diffAdapter = ArrayAdapter.createFromResource(
             this, R.array.difficultyArray,

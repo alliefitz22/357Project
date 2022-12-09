@@ -73,7 +73,7 @@
         android:layout_marginEnd="11dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#3A3939"
-        android:text="Home"
+        android:text="@string/Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -108,7 +108,7 @@
         android:layout_marginStart="11dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#3A3939"
-        android:text="Back"
+        android:text="@string/Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

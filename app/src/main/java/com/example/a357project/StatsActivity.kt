@@ -43,7 +43,7 @@ class StatsActivity : AppCompatActivity() {
                 i.data = Uri.parse(uri)
                 startActivity(i)
             } else {
-                Toast.makeText(this, "Save not found.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Save_Not_Found), Toast.LENGTH_SHORT).show()
             }
         }
     }
