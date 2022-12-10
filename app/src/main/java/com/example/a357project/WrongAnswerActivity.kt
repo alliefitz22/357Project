@@ -103,10 +103,6 @@ class WrongAnswerActivity : AppCompatActivity() {
         canvas.drawText(bestText, x, height + 300F, paint)
         canvas.drawText(timerOn, x, height + 450F, paint)
 
-        /* In future, save to different directory with intent to auto-delete
-        saves until user purposely requests to keep them. Cache? Trash?
-        Somewhere else? */
-
         /* Now, save using MediaStore API if on Android 10+.*/
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             try {
@@ -121,8 +117,7 @@ class WrongAnswerActivity : AppCompatActivity() {
                 )
 
                 val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values)
-                val outputStream = Objects.requireNonNull(uri)
-                    ?.let { resolver.openOutputStream(it) }
+                val outputStream = Objects.requireNonNull(uri)?.let { resolver.openOutputStream(it) }
                 Thread {
                     saved.compress(
                         Bitmap.CompressFormat.JPEG, 100,

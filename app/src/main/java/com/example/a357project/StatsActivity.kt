@@ -36,6 +36,9 @@ class StatsActivity : AppCompatActivity() {
         }
 
         shareButton.setOnClickListener {
+            /* Two different methods of checking if the file exists, since
+               for some reason this produces two different results on the
+               different systems. */
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 val uri = sPref.getString("recentURI", "none")
                 val sourceFile = DocumentFile.fromSingleUri(this, Uri.parse(uri))
